@@ -22,7 +22,7 @@ def main():
     # Home Page
     if menu == "Home":
         st.title("Aplikasi Prediksi Tingkat Anxiety DASS-21")
-        st.image("https://via.placeholder.com/800x400.png?text=DASS-21", caption="DASS-21 Assessment", use_column_width=True)
+        st.image("anxiety.jpg", caption="DASS-21 Assessment", use_column_width=True)
         st.markdown("""
         ### Tentang Aplikasi
         Aplikasi ini mengukur tingkat **Stress**, **Anxiety**, dan **Depression** berdasarkan kuesioner **DASS-21**.
