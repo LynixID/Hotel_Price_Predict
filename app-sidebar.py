@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import matplotlib.pyplot as plt
 import base64
 
 # Fungsi untuk menghitung skor berdasarkan kategori
@@ -9,12 +10,45 @@ def calculate_scores(df, answers):
     total_scores = scores.groupby('cat')['score'].sum().to_dict()
     return total_scores
 
-# Fungsi untuk mengunduh dataset
-def download_csv(data, filename, label):
-    csv = data.to_csv(index=False)
-    b64 = base64.b64encode(csv.encode()).decode()  # encode to Base64
-    href = f'<a href="data:file/csv;base64,{b64}" download="{filename}">{label}</a>'
-    return href
+# Fungsi untuk membuat grafik batang
+def plot_bar_chart(df, answered_count):
+    filtered_df = df.iloc[:answered_count]
+    category_counts = filtered_df['cat'].value_counts()
+
+    fig, ax = plt.subplots()
+    category_counts.plot(kind='bar', color=['#6baed6', '#fd8d3c', '#74c476'], ax=ax)
+    ax.set_title(f"Distribusi Kategori ({answered_count} Pertanyaan Dijawab)")
+    ax.set_xlabel("Kategori")
+    ax.set_ylabel("Jumlah Pertanyaan")
+    ax.set_xticks(range(len(category_counts)))
+    ax.set_xticklabels(['Stress (S)', 'Anxiety (A)', 'Depression (D)'])
+    ax.bar_label(ax.containers[0])
+    return fig
+
+# Fungsi untuk membuat grafik line chart
+def plot_line_chart(df, answered_count):
+    filtered_df = df.iloc[:answered_count]
+    category_counts = filtered_df['cat'].value_counts()
+
+    fig, ax = plt.subplots()
+    category_counts.sort_index().plot(kind='line', marker='o', color='b', ax=ax)
+    ax.set_title(f"Distribusi Kategori ({answered_count} Pertanyaan Dijawab)")
+    ax.set_xlabel("Kategori")
+    ax.set_ylabel("Jumlah Pertanyaan")
+    ax.set_xticks(range(len(category_counts)))
+    ax.set_xticklabels(['Stress (S)', 'Anxiety (A)', 'Depression (D)'])
+    return fig
+
+# Fungsi untuk membuat grafik pie chart
+def plot_pie_chart(df, answered_count):
+    filtered_df = df.iloc[:answered_count]
+    category_counts = filtered_df['cat'].value_counts()
+
+    fig, ax = plt.subplots()
+    category_counts.plot(kind='pie', autopct='%1.1f%%', startangle=90, ax=ax, colors=['#6baed6', '#fd8d3c', '#74c476'])
+    ax.set_title(f"Distribusi Kategori ({answered_count} Pertanyaan Dijawab)")
+    ax.set_ylabel("")  # Menghilangkan label y
+    return fig
 
 # Membuat aplikasi Streamlit
 def main():
@@ -44,18 +78,11 @@ def main():
     # Home Page
     if menu == "🏠 Home":
         st.title("🏠 Aplikasi Prediksi Tingkat Anxiety DASS-21")
-        col1, col2 = st.columns([2, 1])  # Membagi menjadi 2 kolom
+        col1, col2 = st.columns([2, 1])
         with col1:
             st.markdown("""
             ### Selamat Datang!
             Aplikasi ini dirancang untuk membantu Anda menilai tingkat **Stress**, **Anxiety**, dan **Depression** berdasarkan kuesioner **DASS-21**.
-
-            #### Fitur Utama:
-            - **Kuesioner Interaktif**: Jawab 21 pertanyaan dengan mudah.
-            - **Hasil Klasifikasi**: Analisis berdasarkan kategori.
-            - **Akses Dataset**: Tinjau atau unduh data kuesioner.
-            
-            > Gunakan aplikasi ini untuk memahami kesehatan mental Anda dengan lebih baik.
             """, unsafe_allow_html=True)
         with col2:
             st.image("anxiety.jpg", caption="DASS-21 Assessment", use_column_width=True)
@@ -63,18 +90,8 @@ def main():
     # Dataset Page
     elif menu == "📊 Dataset":
         st.title("📊 Dataset DASS-21")
-        st.markdown("""
-        Berikut adalah dataset dari kuesioner **DASS-21**.
-        Anda juga dapat mengunduh dataset ini untuk kebutuhan analisis lebih lanjut.
-        """)
-
-        # Tampilkan dataset
-        st.dataframe(df.style.set_properties(**{'background-color': '#f9f9f9', 
-                                                'color': '#333333', 
-                                                'border': '1px solid #dddddd'}))
-
-        # Tambahkan tautan unduh
-        st.markdown(download_csv(df, "DASS21_v1.csv", "📥 Unduh Dataset"), unsafe_allow_html=True)
+        st.markdown("Berikut adalah dataset dari kuesioner **DASS-21**.")
+        st.dataframe(df)
 
     # Prediksi Page
     elif menu == "🧠 Prediksi":
@@ -82,8 +99,14 @@ def main():
         st.write("Jawab pertanyaan berikut sesuai dengan kondisi Anda:")
         user_answers = []
 
+        # Slider untuk memilih jumlah pertanyaan yang dijawab
+        max_questions = len(df)
+        answered_count = st.slider("Jumlah Pertanyaan yang Dijawab:", 1, max_questions, value=max_questions)
+
         # Input jawaban untuk setiap pertanyaan
         for index, row in df.iterrows():
+            if index >= answered_count:
+                break
             answer = st.radio(
                 f"{row['qno']}. {row['qtext']}",
                 options=[0, 1, 2, 3],
@@ -92,14 +115,32 @@ def main():
             )
             user_answers.append(answer)
 
+
+        # Dropdown untuk memilih jenis grafik
+        st.markdown("### 📈 Pilih Jenis Grafik")
+        chart_type = st.selectbox(
+            "Pilih jenis grafik yang ingin ditampilkan:",
+            ["Bar Chart", "Line Chart", "Pie Chart"]
+        )
+
+        # Menampilkan grafik sesuai pilihan
+        if chart_type == "Bar Chart":
+            fig = plot_bar_chart(df, answered_count)
+        elif chart_type == "Line Chart":
+            fig = plot_line_chart(df, answered_count)
+        elif chart_type == "Pie Chart":
+            fig = plot_pie_chart(df, answered_count)
+
+        st.pyplot(fig)
+
         # Prediksi skor
         if st.button("💡 Lihat Hasil"):
-            total_scores = calculate_scores(df, user_answers)
+            total_scores = calculate_scores(df.iloc[:answered_count], user_answers)
             st.success("Berikut adalah hasil Anda:")
             for category, score in total_scores.items():
                 st.write(f"**{category.capitalize()}**: {score}")
 
-            # Klasifikasi berdasarkan skor (contoh threshold sederhana)
+            # Klasifikasi berdasarkan skor
             st.write("### Kategori Hasil:")
             thresholds = {"s": 14, "a": 7, "d": 10}
             for category, score in total_scores.items():
