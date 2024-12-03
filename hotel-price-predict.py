@@ -38,7 +38,7 @@ st.sidebar.info("Aplikasi ini menggunakan machine learning untuk memprediksi har
 st.sidebar.markdown("### 📊 Statistik Data")
 st.sidebar.metric("Total Data", f"{len(dataset):,} baris")
 
-# Fungsi untuk halaman beranda
+# Fungsi untuk halaman berandaS
 def beranda():
     st.title("🏢 Aplikasi Prediksi Harga Hotel")
     st.markdown("---")
