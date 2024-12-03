@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
@@ -11,10 +12,10 @@ def load_data(file_path):
     data = pd.read_csv(file_path, encoding="latin1")
     data.columns = data.columns.str.strip()  # Clean up column names
     data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace("[^\d]", "", regex=True).astype(float)
-    data = data.dropna(subset=['Room Price', 'Rating'])  # Remove rows with NaN in Room Price or Rating
+    data = data.dropna(subset=['Room Price'])  # Remove rows with NaN in Room Price
     return data
 
-# Load dataset
+
 dataset = load_data("booking_hotel.csv")  # Ganti dengan path file yang sesuai
 
 # Sidebar navigation
@@ -38,33 +39,18 @@ elif page == "Dataset":
 elif page == "Visualization":
     st.title("Visualizations")
     st.write("Analisis visual data.")
-
-    # Visualisasi Distribusi Harga Kamar
+    
+    # Distribusi Harga Kamar
     st.write("Distribusi Harga Kamar")
     fig, ax = plt.subplots()
-    sns.histplot(dataset["Room Price"], bins=20, kde=True, ax=ax, color="blue")
-    ax.set_title("Distribusi Harga Kamar")
-    ax.set_xlabel("Harga Kamar")
-    ax.set_ylabel("Frekuensi")
+    sns.histplot(dataset["Room Price"], kde=True, ax=ax)
     st.pyplot(fig)
-
-    # Visualisasi Distribusi Rating Hotel
-    st.write("Distribusi Rating Hotel")
-    fig, ax = plt.subplots()
-    sns.histplot(dataset["Rating"], bins=10, kde=True, ax=ax, color="purple")
-    ax.set_title("Distribusi Rating Hotel")
-    ax.set_xlabel("Rating")
-    ax.set_ylabel("Frekuensi")
-    st.pyplot(fig)
-
-    # Visualisasi Harga Kamar Berdasarkan Lokasi
+    
+    # Harga Kamar Berdasarkan Lokasi
     st.write("Harga Kamar Berdasarkan Lokasi")
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.boxplot(data=dataset, x="Location", y="Room Price", ax=ax)
     plt.xticks(rotation=45)
-    ax.set_title("Harga Kamar Berdasarkan Lokasi")
-    ax.set_xlabel("Lokasi")
-    ax.set_ylabel("Harga Kamar")
     st.pyplot(fig)
 
 elif page == "Prediction":
@@ -76,6 +62,7 @@ elif page == "Prediction":
     room_type = st.selectbox("Jenis Kamar", dataset["Room Type"].unique())
     bed_type = st.selectbox("Jenis Tempat Tidur", dataset["Bed Type"].unique())
 
+    # Tombol trigger untuk prediksi
     if st.button("Prediksi Harga"):
         # Prepare the data for prediction
         X = dataset[["Location", "Room Type", "Bed Type"]]
@@ -94,4 +81,4 @@ elif page == "Prediction":
         input_data = input_data.reindex(columns=X.columns, fill_value=0)
         prediction = model.predict(input_data)
 
-        st.write(f"Prediksi Harga Kamar: {prediction[0]:,.2f}")
+        st.write(f"Prediksi Harga Kamar: ${prediction[0]:,.2f}")
