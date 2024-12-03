@@ -86,7 +86,7 @@ def visualisasi():
     st.title("📈 Visualisasi Data")
     st.markdown("---")
     
-    tab1, tab2, tab3 = st.tabs(["📊 Distribusi Harga", "📍 Harga per Lokasi", "🛏️ Analisis Kamar"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Distribusi Harga", "📍 Harga per Lokasi", "🛏️ Analisis Kamar", "⭐ Rating Hotel"])
     
     with tab1:
         st.markdown("### Distribusi Harga Kamar Hotel")
@@ -135,6 +135,21 @@ def visualisasi():
             st.metric("Harga Terendah", f"Rp {dataset['Room Price'].min():,.2f}")
         with col5:
             st.metric("Harga Rata-rata", f"Rp {dataset['Room Price'].mean():,.2f}")
+    
+    with tab4:
+        st.markdown("### ⭐ Line Chart Rating Hotel")
+        if "Rating" in dataset.columns:  # Pastikan kolom Rating ada
+            sorted_dataset = dataset.sort_values(by="Hotel Name")  # Urutkan berdasarkan nama hotel
+            fig5, ax5 = plt.subplots(figsize=(12, 6))
+            sns.lineplot(data=sorted_dataset, x="Hotel Name", y="Rating", ax=ax5, marker="o")
+            ax5.set_title("Rating Hotel")
+            ax5.set_xlabel("Nama Hotel")
+            ax5.set_ylabel("Rating")
+            plt.xticks(rotation=45)
+            plt.tight_layout()
+            st.pyplot(fig5)
+        else:
+            st.error("Kolom 'Rating' tidak ditemukan dalam dataset!")
 
 # Fungsi untuk halaman prediksi
 def prediksi():
