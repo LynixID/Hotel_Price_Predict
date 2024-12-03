@@ -1,88 +1,201 @@
+# Import library yang diperlukan
 import streamlit as st
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestRegressor 
 from sklearn.metrics import mean_absolute_error
 
-# Load dataset
-@st.cache
-def load_data(file_path):
-    data = pd.read_csv(file_path, encoding="latin1")
-    data.columns = data.columns.str.strip()  # Clean up column names
+# Konfigurasi tampilan halaman
+st.set_page_config(layout="wide", page_title="Prediksi Harga Hotel")
+
+# Fungsi untuk memuat dan membersihkan data
+def muat_data():
+    data = pd.read_csv("booking_hotel.csv", encoding="latin1")
+    data.columns = data.columns.str.strip()
     data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace("[^\d]", "", regex=True).astype(float)
-    data = data.dropna(subset=['Room Price'])  # Remove rows with NaN in Room Price
-    return data
+    return data.dropna(subset=['Room Price'])
 
-dataset = load_data("booking_hotel.csv")  # Ganti dengan path file yang sesuai
+# Memuat dataset
+dataset = muat_data()
 
-# Sidebar navigation
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Pages", ["Homepage", "Dataset", "Visualization", "Prediction"])
+# Konfigurasi sidebar
+st.sidebar.image("image.jpg", width=200)  # Width tetap bisa digunakan untuk sidebar
+st.sidebar.title("🏨 Menu Navigasi")
+st.sidebar.markdown("---")
 
-if page == "Homepage":
-    st.title("Hotel Price Prediction App")
-    st.write("""
-    Aplikasi ini memprediksi harga kamar hotel berdasarkan parameter seperti lokasi, jenis kamar, jenis tempat tidur, dan lain-lain.
-    Anda dapat menjelajahi dataset, melihat visualisasi, dan melakukan prediksi harga!
+# Menu sidebar
+selected = st.sidebar.selectbox(
+    "Pilih Menu",
+    ["Beranda", "Dataset", "Visualisasi", "Prediksi"],
+)
+
+# Informasi di sidebar
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📱 Informasi Aplikasi")
+st.sidebar.info("Aplikasi ini menggunakan machine learning untuk memprediksi harga kamar hotel.")
+st.sidebar.markdown("### 📊 Statistik Data")
+st.sidebar.metric("Total Data", f"{len(dataset):,} baris")
+
+# Fungsi untuk halaman beranda
+def beranda():
+    st.title("🏢 Aplikasi Prediksi Harga Hotel")
+    st.markdown("---")
+    
+    col1, col2 = st.columns([2,1])
+    with col1:
+        st.markdown("""
+        ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
+        
+        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan:
+        - 📍 Lokasi Hotel
+        - 🛏️ Jenis Kamar
+        - 🛋️ Tipe Tempat Tidur
+        """)
+        
+        st.info("""
+        ### 🎯 Fitur Utama:
+        1. **Dataset**: Melihat data hotel yang tersedia
+        2. **Visualisasi**: Analisis visual data harga hotel
+        3. **Prediksi**: Prediksi harga berdasarkan preferensi
+        """)
+    with col2:
+        with col2:
+            st.image("image.jpg", caption="Prediksi Harga Hotel", use_container_width=True)
+
+# Fungsi untuk halaman dataset
+def dataset_view():
+    st.title("📊 Dataset Hotel")
+    st.markdown("---")
+    
+    col1, col2 = st.columns([3,1])
+    with col1:
+        st.dataframe(dataset, use_container_width=True)
+    with col2:
+        st.metric("Jumlah Data", f"{dataset.shape[0]:,}")
+        st.metric("Jumlah Kolom", f"{dataset.shape[1]}")
+        
+        st.markdown("### 📈 Ringkasan Statistik")
+        st.write("Harga Terendah:", f"Rp {dataset['Room Price'].min():,.2f}")
+        st.write("Harga Tertinggi:", f"Rp {dataset['Room Price'].max():,.2f}")
+        st.write("Harga Rata-rata:", f"Rp {dataset['Room Price'].mean():,.2f}")
+
+# Fungsi untuk halaman visualisasi
+def visualisasi():
+    st.title("📈 Visualisasi Data")
+    st.markdown("---")
+    
+    tab1, tab2, tab3 = st.tabs(["📊 Distribusi Harga", "📍 Harga per Lokasi", "🛏️ Analisis Kamar"])
+    
+    with tab1:
+        st.markdown("### Distribusi Harga Kamar Hotel")
+        fig1, ax1 = plt.subplots(figsize=(10, 6))
+        sns.histplot(dataset["Room Price"], kde=True, ax=ax1)
+        ax1.set_title("Distribusi Harga Kamar")
+        st.pyplot(fig1)
+        
+    with tab2:
+        st.markdown("### Perbandingan Harga Berdasarkan Lokasi")
+        fig2, ax2 = plt.subplots(figsize=(12, 6))
+        sns.boxplot(data=dataset, x="Location", y="Room Price", ax=ax2)
+        plt.xticks(rotation=45)
+        ax2.set_title("Harga Kamar Berdasarkan Lokasi")
+        st.pyplot(fig2)
+    
+    with tab3:
+        st.markdown("### Analisis Harga Berdasarkan Tipe Kamar dan Tempat Tidur")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            avg_room_price = dataset.groupby("Room Type")["Room Price"].mean().sort_values(ascending=True)
+            fig3, ax3 = plt.subplots(figsize=(10, 6))
+            avg_room_price.plot(kind='barh', ax=ax3)
+            ax3.set_title("Rata-rata Harga per Jenis Kamar")
+            ax3.set_xlabel("Harga (Rp)")
+            plt.tight_layout()
+            st.pyplot(fig3)
+        
+        with col2:
+            avg_bed_price = dataset.groupby("Bed Type")["Room Price"].mean().sort_values(ascending=True)
+            fig4, ax4 = plt.subplots(figsize=(10, 6))
+            avg_bed_price.plot(kind='barh', ax=ax4)
+            ax4.set_title("Rata-rata Harga per Tipe Tempat Tidur")
+            ax4.set_xlabel("Harga (Rp)")
+            plt.tight_layout()
+            st.pyplot(fig4)
+        
+        st.markdown("### 📊 Rangkuman Statistik")
+        col3, col4, col5 = st.columns(3)
+        
+        with col3:
+            st.metric("Harga Tertinggi", f"Rp {dataset['Room Price'].max():,.2f}")
+        with col4:
+            st.metric("Harga Terendah", f"Rp {dataset['Room Price'].min():,.2f}")
+        with col5:
+            st.metric("Harga Rata-rata", f"Rp {dataset['Room Price'].mean():,.2f}")
+
+# Fungsi untuk halaman prediksi
+def prediksi():
+    st.title("🔮 Prediksi Harga Hotel")
+    st.markdown("---")
+    
+    # Penjelasan cara kerja prediksi
+    st.markdown("""
+    ### ℹ️ Cara Kerja Prediksi:
+    1. Model mempelajari pola dari dataset yang berisi data historis harga hotel
+    2. Prediksi dilakukan berdasarkan 3 faktor utama:
+        - Lokasi hotel yang dipilih
+        - Jenis kamar yang diinginkan
+        - Tipe tempat tidur yang tersedia
+    3. Model akan menganalisis data historis untuk menemukan harga yang paling sesuai
     """)
-    st.image("image.jpg", caption="Prediksi Harga Hotel")
-
-elif page == "Dataset":
-    st.title("Dataset")
-    st.write("Berikut adalah data yang digunakan untuk model:")
-    st.write(dataset)
-    st.write("Jumlah data:", dataset.shape)
-
-elif page == "Visualization":
-    st.title("Visualizations")
-    st.write("Analisis visual data.")
     
-    # Distribusi Harga Kamar
-    st.write("Distribusi Harga Kamar")
-    fig, ax = plt.subplots()
-    sns.histplot(dataset["Room Price"], kde=True, ax=ax)
-    st.pyplot(fig)
+    col1, col2 = st.columns([1,1])
     
-    # Harga Kamar Berdasarkan Lokasi
-    st.write("Harga Kamar Berdasarkan Lokasi")
-    fig, ax = plt.subplots(figsize=(10, 6))
-    sns.boxplot(data=dataset, x="Location", y="Room Price", ax=ax)
-    plt.xticks(rotation=45)
-    st.pyplot(fig)
+    with col1:
+        st.markdown("### Parameter Input")
+        lokasi = st.selectbox("📍 Lokasi", dataset["Location"].unique())
+        jenis_kamar = st.selectbox("🛏️ Jenis Kamar", dataset["Room Type"].unique())
+        jenis_tempat_tidur = st.selectbox("🛋️ Jenis Tempat Tidur", dataset["Bed Type"].unique())
+        
+    with col2:
+        st.markdown("### Hasil Prediksi")
+        
+        X = dataset[["Location", "Room Type", "Bed Type"]]
+        X = pd.get_dummies(X, drop_first=True)
+        y = dataset["Room Price"]
+        
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        model = RandomForestRegressor(random_state=42)
+        model.fit(X_train, y_train)
+        
+        data_input = pd.DataFrame([[lokasi, jenis_kamar, jenis_tempat_tidur]], 
+                                 columns=["Location", "Room Type", "Bed Type"])
+        data_input = pd.get_dummies(data_input)
+        data_input = data_input.reindex(columns=X.columns, fill_value=0)
+        hasil_prediksi = model.predict(data_input)
+        
+        st.metric("💰 Prediksi Harga", f"Rp {hasil_prediksi[0]:,.2f}")
+        
+        y_pred = model.predict(X_test)
+        mae = mean_absolute_error(y_test, y_pred)
+        st.metric("📉 Tingkat Akurasi Prediksi", f"±Rp {mae:,.2f}")
+        
+        st.info("""
+        💡 Informasi Tingkat Akurasi:
+        - Angka ini menunjukkan rata-rata selisih antara harga prediksi dengan harga sebenarnya
+        - Contoh: Jika tingkat akurasi ±Rp 100.000, prediksi harga bisa lebih tinggi atau lebih rendah sekitar Rp 100.000
+        - Semakin kecil nilai ini, semakin akurat prediksi yang dihasilkan
+        """)
 
-elif page == "Prediction":
-    st.title("Prediction")
-    st.write("Masukkan parameter untuk memprediksi harga kamar hotel.")
-    
-    # Input features for prediction
-    location = st.selectbox("Lokasi", dataset["Location"].unique())
-    room_type = st.selectbox("Jenis Kamar", dataset["Room Type"].unique())
-    bed_type = st.selectbox("Jenis Tempat Tidur", dataset["Bed Type"].unique())
-
-    # Prepare the data for prediction
-    X = dataset[["Location", "Room Type", "Bed Type"]]
-    X = pd.get_dummies(X, drop_first=True)
-    y = dataset["Room Price"]
-
-    # Train a simple model
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    model = RandomForestRegressor(random_state=42)
-    model.fit(X_train, y_train)
-
-    # Make prediction
-    input_data = pd.DataFrame([[location, room_type, bed_type]], 
-                              columns=["Location", "Room Type", "Bed Type"])
-    input_data = pd.get_dummies(input_data)
-    input_data = input_data.reindex(columns=X.columns, fill_value=0)
-    prediction = model.predict(input_data)
-
-    st.write(f"Prediksi Harga Kamar: {prediction[0]:,.2f}")
-
-    # Model evaluation
-    st.write("Evaluasi Model")
-    y_pred = model.predict(X_test)
-    mae = mean_absolute_error(y_test, y_pred)
-    st.write(f"Mean Absolute Error: {mae:,.2f}")
+# Router halaman
+if selected == "Beranda":
+    beranda()
+elif selected == "Dataset":
+    dataset_view()
+elif selected == "Visualisasi":
+    visualisasi()
+elif selected == "Prediksi":
+    prediksi()
