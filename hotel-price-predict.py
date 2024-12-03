@@ -5,17 +5,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
 
 # Load dataset
 @st.cache
-def load_data():
-    file_path = "booking_hotel.csv"  # Ganti dengan lokasi dataset Anda
+def load_data(file_path):
     data = pd.read_csv(file_path, encoding="latin1")
-    data.columns = data.columns.str.strip()  # Membersihkan spasi pada nama kolom
+    data.columns = data.columns.str.strip()  # Clean up column names
     data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace("[^\d]", "", regex=True).astype(float)
+    data = data.dropna(subset=['Room Price'])  # Remove rows with NaN in Room Price
     return data
 
-dataset = load_data()
+dataset = load_data("booking_hotel.csv")  # Ganti dengan path file yang sesuai
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
@@ -27,7 +28,7 @@ if page == "Homepage":
     Aplikasi ini memprediksi harga kamar hotel berdasarkan parameter seperti lokasi, jenis kamar, jenis tempat tidur, dan lain-lain.
     Anda dapat menjelajahi dataset, melihat visualisasi, dan melakukan prediksi harga!
     """)
-    st.image("https://via.placeholder.com/800x400", caption="Prediksi Harga Hotel")
+    st.image("image.jpg", caption="Prediksi Harga Hotel")
 
 elif page == "Dataset":
     st.title("Dataset")
@@ -55,7 +56,7 @@ elif page == "Visualization":
 elif page == "Prediction":
     st.title("Prediction")
     st.write("Masukkan parameter untuk memprediksi harga kamar hotel.")
-
+    
     # Input features for prediction
     location = st.selectbox("Lokasi", dataset["Location"].unique())
     room_type = st.selectbox("Jenis Kamar", dataset["Room Type"].unique())
@@ -79,3 +80,9 @@ elif page == "Prediction":
     prediction = model.predict(input_data)
 
     st.write(f"Prediksi Harga Kamar: {prediction[0]:,.2f}")
+
+    # Model evaluation
+    st.write("Evaluasi Model")
+    y_pred = model.predict(X_test)
+    mae = mean_absolute_error(y_test, y_pred)
+    st.write(f"Mean Absolute Error: {mae:,.2f}")
