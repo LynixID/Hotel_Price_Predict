@@ -14,14 +14,14 @@ st.set_page_config(layout="wide", page_title="Prediksi Harga Hotel")
 def muat_data():
     data = pd.read_csv("booking_hotel.csv", encoding="latin1")
     data.columns = data.columns.str.strip()
-    data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace("[^\d]", "", regex=True).astype(float)
+    data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace(r"[^\d]", "", regex=True).astype(float)
     return data.dropna(subset=['Room Price'])
 
 # Memuat dataset
 dataset = muat_data()
 
 # Konfigurasi sidebar
-st.sidebar.image("image.jpg", width=200)
+st.sidebar.image("traveltime.png", width=300)
 st.sidebar.title("🏨 Menu Navigasi")
 st.sidebar.markdown("---")
 
@@ -45,7 +45,7 @@ def beranda():
     
     col1, col2 = st.columns([2, 1])
     with col1:
-        st.markdown("""
+        st.markdown(""" 
         ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
         
         Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti :
@@ -54,14 +54,16 @@ def beranda():
         - 🛋️ Tipe Tempat Tidur
         """)
         
-        st.info("""
+        st.image("hotel.jpg", caption= "Newstar Hotel", use_container_width=True)
+        
+        st.info(""" 
         ### 🎯 Fitur Utama
         1. **Dataset** : Melihat dan mengeksplorasi data hotel yang tersedia
         2. **Visualisasi** : Analisis visual data harga hotel
         3. **Prediksi** : Prediksi harga berdasarkan preferensi Anda
         """)
-
-        st.markdown("""
+        
+        st.markdown(""" 
         ### 🎯 Tujuan dan Manfaat
         
         **Tujuan Pengembangan :**
@@ -75,7 +77,7 @@ def beranda():
         3. Pemahaman Mendalam tentang Tren Harga Hotel
         """)
         
-        st.markdown("""
+        st.markdown(""" 
         ### 🚀 Cara Menggunakan Website
         
         1. **Eksplorasi Dataset**
@@ -91,11 +93,11 @@ def beranda():
            - Masukkan preferensi Anda (lokasi, tipe kamar, dll.)
            - Dapatkan estimasi harga beserta tingkat akurasinya
         """)
-
-    with col2:
-        st.image("image.jpg", caption="Prediksi Harga Hotel", use_container_width=True)
         
-        st.markdown("""
+    with col2:
+        st.image("giftutor.gif", caption="Tutorial", use_container_width=True)
+        
+        st.markdown(""" 
         ### 💡 Tips Penggunaan
         
         1. Mulai dengan mempelajari dataset untuk pemahaman awal
