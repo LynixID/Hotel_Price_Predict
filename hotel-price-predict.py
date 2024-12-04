@@ -48,28 +48,28 @@ def beranda():
         st.markdown("""
         ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
         
-        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti:
+        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti :
         - 📍 Lokasi Hotel
         - 🛏️ Jenis Kamar
         - 🛋️ Tipe Tempat Tidur
         """)
         
         st.info("""
-        ### 🎯 Fitur Utama:
-        1. **Dataset**: Melihat dan mengeksplorasi data hotel yang tersedia
-        2. **Visualisasi**: Analisis visual data harga hotel
-        3. **Prediksi**: Prediksi harga berdasarkan preferensi Anda
+        ### 🎯 Fitur Utama
+        1. **Dataset** : Melihat dan mengeksplorasi data hotel yang tersedia
+        2. **Visualisasi** : Analisis visual data harga hotel
+        3. **Prediksi** : Prediksi harga berdasarkan preferensi Anda
         """)
 
         st.markdown("""
         ### 🎯 Tujuan dan Manfaat
         
-        **Tujuan Pengembangan:**
+        **Tujuan Pengembangan :**
         1. Memberikan estimasi harga hotel yang akurat untuk membantu perencanaan anggaran
         2. Menyediakan insight tentang faktor-faktor yang mempengaruhi harga hotel
         3. Memudahkan perbandingan harga berdasarkan berbagai kriteria
         
-        **Manfaat bagi Pengguna:**
+        **Manfaat bagi Pengguna :**
         1. Perencanaan Anggaran yang Lebih Baik
         2. Pengambilan Keputusan yang Lebih Informed
         3. Pemahaman Mendalam tentang Tren Harga Hotel
@@ -125,7 +125,7 @@ def metode():
         Model ini menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang lebih akurat.
         """)
 
-        st.markdown("### ✨ Keunggulan Random Forest Regressor:")
+        st.markdown("### ✨ Keunggulan Random Forest Regressor")
         st.markdown("""
         - **Akurasi Tinggi**: Memberikan prediksi yang lebih presisi dibandingkan model lainnya.
         - **Fleksibilitas**: Mampu bekerja dengan berbagai tipe data (numerik dan kategorikal).
@@ -135,7 +135,7 @@ def metode():
 
     # Kolom kanan: Mengapa metode ini dipilih
     with col2:
-        st.markdown("## 🔍 Mengapa Metode Ini?")
+        st.markdown("## 🔍 Mengapa Metode Ini ?")
         st.write("""
         **Random Forest Regressor** dipilih karena sifatnya yang unggul dalam menangani berbagai tantangan dalam prediksi harga hotel:
         """)
@@ -146,7 +146,7 @@ def metode():
         membuat prediksi yang lebih stabil dan akurat meski data yang diberikan cukup beragam dan besar.
         """)
 
-        st.markdown("### 🏆 Keunggulan Utama:")
+        st.markdown("### 🏆 Keunggulan Utama")
         st.markdown("""
         - **Mengatasi Kompleksitas Data**: Cocok untuk pola non-linear dalam data.
         - **Menangani Missing Values**: Mampu bekerja tanpa penghapusan data kosong.
@@ -162,21 +162,21 @@ def metode():
     """)
 
     st.warning("""
-    - **Kompleksitas Model yang Tinggi**: 
+    - **Kompleksitas Model yang Tinggi** : 
       Random Forest terdiri dari banyak pohon keputusan, yang dapat membuat model sulit dipahami dan diinterpretasikan. Hal ini mengurangi transparansi prediksi yang diberikan.
       
-    - **Waktu Latih yang Lama**: 
+    - **Waktu Latih yang Lama** : 
       Mengingat jumlah pohon dalam Random Forest, proses pelatihan bisa memakan waktu yang lebih lama, terutama pada dataset besar.
       
-    - **Kurang Efektif pada Data dengan Dimensi Tinggi**: 
+    - **Kurang Efektif pada Data dengan Dimensi Tinggi** : 
       Random Forest terkadang mengalami penurunan performa jika fitur data sangat besar (high-dimensional data).
     
-    - **Overfitting pada Dataset Kecil**:
+    - **Overfitting pada Dataset Kecil** :
       Walaupun Random Forest cenderung menghindari overfitting, pada dataset yang sangat kecil, model bisa saja terlalu menyesuaikan diri dengan data training, sehingga kurang mampu generalisasi pada data baru.
     """)
 
     # Menambahkan Solusi
-    st.markdown("### 🛠️ Solusi yang Telah Diterapkan:")
+    st.markdown("### 🛠️ Solusi yang Telah Diterapkan")
     st.info(""" Dalam kode yang kami buat, kami telah menerapkan beberapa solusi untuk mengatasi masalah model, seperti mengatur parameter di Random Forest, di antaranya max_depth=None, min_samples_split=2, dan min_samples_leaf=1, untuk mencegah overfitting dengan mengontrol kompleksitas model. Kami juga menggunakan GridSearchCV untuk secara otomatis mencari kombinasi parameter terbaik, seperti n_estimators=100 dan max_depth=None, guna meningkatkan kinerja model. Namun, solusi lain seperti penggunaan PCA untuk mengurangi jumlah fitur dan visualisasi pentingnya fitur dengan SHAP belum kami terapkan dalam kode ini.
     """)
 
@@ -184,9 +184,9 @@ def metode():
     # Menambahkan Manfaat
     st.markdown("### 🎯 Manfaat Penggunaan Model")
     st.info("""
-    1. **Prediksi Harga Akurat**: Membantu estimasi harga kamar hotel dengan lebih presisi.
+    1. **Prediksi Harga Akurat** : Membantu estimasi harga kamar hotel dengan lebih presisi.
     2. **Pemahaman tentang Tren Harga**: Menyediakan wawasan mengenai faktor utama yang memengaruhi harga kamar.
-    3. **Keputusan Cerdas**: Membantu pengguna memilih lokasi dan tipe kamar yang sesuai dengan anggaran.
+    3. **Keputusan Cerdas** : Membantu pengguna memilih lokasi dan tipe kamar yang sesuai dengan anggaran.
     """)
 
     # Kesimpulan akhir dengan st.success agar lebih mencolok
