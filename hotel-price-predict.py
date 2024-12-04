@@ -108,18 +108,25 @@ def metode():
     st.title("⚙️ Metode Prediksi Harga Hotel")
     st.markdown("---")
 
-    # Membuat dua kolom
+    # Membuat dua kolom untuk tampilan yang lebih rapi
     col1, col2 = st.columns(2)
 
     # Kolom kiri: Teknologi yang digunakan
     with col1:
         st.markdown("## 🧠 Teknologi yang Digunakan")
-        st.write("""
+        st.write(""" 
         Aplikasi ini menggunakan **Random Forest Regressor**, 
         sebuah algoritma machine learning yang dirancang untuk memprediksi nilai kontinu seperti harga kamar hotel.
         """)
+        
+        # Info Box untuk memberikan detail lebih lanjut
+        st.info("""
+        **Random Forest Regressor** adalah teknik pembelajaran mesin yang sangat efektif dan sering digunakan dalam prediksi harga berbasis data.
+        Model ini menggunakan banyak pohon keputusan untuk menghasilkan prediksi yang lebih akurat.
+        """)
+
         st.markdown("### ✨ Keunggulan Random Forest Regressor:")
-        st.write("""
+        st.markdown("""
         - **Akurasi Tinggi**: Memberikan prediksi yang lebih presisi dibandingkan model lainnya.
         - **Fleksibilitas**: Mampu bekerja dengan berbagai tipe data (numerik dan kategorikal).
         - **Tahan terhadap Overfitting**: Menggunakan pendekatan ensemble untuk hasil yang lebih stabil.
@@ -130,32 +137,61 @@ def metode():
     with col2:
         st.markdown("## 🔍 Mengapa Metode Ini?")
         st.write("""
-        **Random Forest Regressor** dipilih karena sifatnya yang unggul dalam:
+        **Random Forest Regressor** dipilih karena sifatnya yang unggul dalam menangani berbagai tantangan dalam prediksi harga hotel:
         """)
+        
+        # Menekankan alasan memilih metode ini
+        st.success("""
+        Random Forest Regressor memberikan hasil yang lebih baik dengan mengkombinasikan beberapa pohon keputusan,
+        membuat prediksi yang lebih stabil dan akurat meski data yang diberikan cukup beragam dan besar.
+        """)
+
         st.markdown("### 🏆 Keunggulan Utama:")
-        st.write("""
+        st.markdown("""
         - **Mengatasi Kompleksitas Data**: Cocok untuk pola non-linear dalam data.
         - **Menangani Missing Values**: Mampu bekerja tanpa penghapusan data kosong.
         - **Skalabilitas Tinggi**: Efektif pada dataset besar tanpa mengurangi performa.
         - **Insightful**: Mengidentifikasi faktor utama yang memengaruhi harga.
         """)
 
-    # Menambahkan catatan tambahan di bagian bawah
-    st.info("### 🎯 Manfaat Penggunaan Model")
-    st.info("""
-    1. **Prediksi Harga Akurat**: Mempermudah estimasi harga kamar hotel.
-    2. **Pemahaman tentang Tren Harga**: Menjelaskan faktor utama penentu harga.
-    3. **Keputusan Cerdas**: Membantu memilih lokasi dan tipe kamar sesuai anggaran.
+    # Menambahkan pembagian bagian Kekurangan 
+    st.markdown("---")
+    st.markdown("### ⚠️ Kekurangan dari Random Forest Regressor")
+    st.write("""
+    Meskipun Random Forest Regressor sangat berguna, ada beberapa kekurangan yang perlu dipertimbangkan:
     """)
 
-    # Menambahkan garis pemisah
-    st.markdown("---")
+    st.warning("""
+    - **Kompleksitas Model yang Tinggi**: 
+      Random Forest terdiri dari banyak pohon keputusan, yang dapat membuat model sulit dipahami dan diinterpretasikan. Hal ini mengurangi transparansi prediksi yang diberikan.
+      
+    - **Waktu Latih yang Lama**: 
+      Mengingat jumlah pohon dalam Random Forest, proses pelatihan bisa memakan waktu yang lebih lama, terutama pada dataset besar.
+      
+    - **Kurang Efektif pada Data dengan Dimensi Tinggi**: 
+      Random Forest terkadang mengalami penurunan performa jika fitur data sangat besar (high-dimensional data).
+    
+    - **Overfitting pada Dataset Kecil**:
+      Walaupun Random Forest cenderung menghindari overfitting, pada dataset yang sangat kecil, model bisa saja terlalu menyesuaikan diri dengan data training, sehingga kurang mampu generalisasi pada data baru.
+    """)
 
-    # Kesimpulan akhir
-    st.markdown("### ✍️ Kesimpulan")
-    st.write("""
-    Dengan menggunakan Random Forest Regressor, aplikasi ini memberikan prediksi harga hotel yang andal
-    serta wawasan berharga untuk membantu pengguna membuat keputusan terbaik.
+    # Menambahkan Solusi
+    st.markdown("### 🛠️ Solusi yang Telah Diterapkan:")
+    st.info(""" Dalam kode yang kami buat, kami telah menerapkan beberapa solusi untuk mengatasi masalah model, seperti mengatur parameter di Random Forest, di antaranya max_depth=None, min_samples_split=2, dan min_samples_leaf=1, untuk mencegah overfitting dengan mengontrol kompleksitas model. Kami juga menggunakan GridSearchCV untuk secara otomatis mencari kombinasi parameter terbaik, seperti n_estimators=100 dan max_depth=None, guna meningkatkan kinerja model. Namun, solusi lain seperti penggunaan PCA untuk mengurangi jumlah fitur dan visualisasi pentingnya fitur dengan SHAP belum kami terapkan dalam kode ini.
+    """)
+
+    st.markdown("---")
+    # Menambahkan Manfaat
+    st.markdown("### 🎯 Manfaat Penggunaan Model")
+    st.info("""
+    1. **Prediksi Harga Akurat**: Membantu estimasi harga kamar hotel dengan lebih presisi.
+    2. **Pemahaman tentang Tren Harga**: Menyediakan wawasan mengenai faktor utama yang memengaruhi harga kamar.
+    3. **Keputusan Cerdas**: Membantu pengguna memilih lokasi dan tipe kamar yang sesuai dengan anggaran.
+    """)
+
+    # Kesimpulan akhir dengan st.success agar lebih mencolok
+    st.success(""" ✍️ Dengan menggunakan Random Forest Regressor, aplikasi ini tidak hanya memberikan prediksi harga hotel yang akurat,
+    tetapi juga memberi wawasan berharga untuk membantu pengguna dalam membuat keputusan yang lebih baik.
     """)
 
 # Fungsi untuk halaman dataset
@@ -174,32 +210,33 @@ def dataset_view():
         st.write("Harga Terendah:", f"Rp {dataset['Room Price'].min():,.2f}")
         st.write("Harga Tertinggi:", f"Rp {dataset['Room Price'].max():,.2f}")
         st.write("Harga Rata-rata:", f"Rp {dataset['Room Price'].mean():,.2f}")
-
-    st.markdown("---")
-    st.info("### 📚 **Penjelasan Data yang Ditampilkan**")
-    st.markdown("""
-    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px;">
-    Mengapa hanya menampilkan sebagian data?  
-    <ul>
-        <li><strong>⚡ Performa Lebih Cepat</strong>: Menampilkan seluruh data (5,000 baris) dapat memperlambat aplikasi.</li>
-        <li><strong>🎨 Tampilan Lebih Rapi</strong>: Data terbatas membuat tabel lebih mudah dibaca.</li>
-        <li><strong>📊 Analisis Tetap Akurat</strong>: Analisis tetap menggunakan data lengkap.</li>
-    </ul>
-    <strong>Bagaimana jika ingin melihat data lengkap?</strong>  
-    Anda dapat mengunduh dataset asli dari Kaggle atau menggunakan alat analisis tambahan.
-    </div>
-    """, unsafe_allow_html=True)
-
+    
     st.markdown("---")
     st.info("### 📄 **Dataset dan Sumber Data**")
     st.markdown("""
     Dataset ini berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k).  
     Berikut alasan memilih dataset ini:  
-    - ✅ **Kualitas Data**: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap.
-    - 🌍 **Keragaman**: Mencakup lokasi, tipe kamar, dan fasilitas.
-    - 🔄 **Update Teratur**: Dataset diperbarui secara berkala.
-    - 📊 **Relevansi**: Mencerminkan kondisi pasar hotel sebenarnya.
+    - ✅ **Kualitas Data** : Berisi lebih dari 5,000 entri hotel dengan informasi lengkap.
+    - 🌍 **Keragaman** : Mencakup lokasi, tipe kamar, dan fasilitas.
+    - 🔄 **Update Teratur** : Dataset diperbarui secara berkala.
+    - 📊 **Relevansi** : Mencerminkan kondisi pasar hotel sebenarnya.
     """)
+
+    st.markdown("---")
+    st.info("### 📚 **Penjelasan Data yang Ditampilkan**")
+    st.markdown("""
+    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px;">
+    Kami memilih untuk hanya menampilkan 82 baris pertama dari dataset karena beberapa alasan, diantaranya : 
+    <ul>
+        <li><strong>⚡ Performa Lebih Cepat</strong> : Menampilkan seluruh data (5,000 baris) dapat memperlambat aplikasi, terutama jika perangkat yang digunakan terbatas. Menampilkan 82 baris pertama memungkinkan aplikasi untuk memuat data dengan cepat dan tanpa gangguan.</li>
+        <li><strong>🎨 Grafik Lebih Rapi</strong> : Menampilkan 82 baris pertama akan memberikan grafik yang lebih mudah dibaca. Jika seluruh data ditampilkan, informasi pada grafik akan terlalu bertumpukan yang akan membuatnya sulit untuk difahami dengan cepat.</li>
+        <li><strong>📊 Analisis Tetap Akurat</strong> : Meskipun hanya 82 baris yang terlihat, analisis dan statistik yang ditampilkan (seperti harga terendah, harga tertinggi, dan harga rata-rata) tetap dihitung berdasarkan seluruh dataset. Ini memastikan bahwa meskipun tampilan terbatas, analisis tetap mencerminkan data yang lengkap dan akurat.</li>
+        <li><strong>📑 Menghindari Kebingungan Pengguna</strong> : Menampilkan terlalu banyak data sekaligus dapat membuat pengguna merasa bingung atau kewalahan. Dengan hanya menunjukkan 82 baris, pengguna dapat lebih mudah fokus pada data penting dan melihat gambaran umum dari dataset.</li>
+    </ul>
+    <strong>Bagaimana jika ingin melihat data lengkap?</strong>  
+    Anda dapat mengunduh dataset asli dari Kaggle atau menggunakan alat analisis tambahan.
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
 
