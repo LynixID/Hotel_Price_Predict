@@ -1,4 +1,4 @@
-Hotel Name,Location,Rating,Review Score,Number of   ,Score,Room Type,Bed Type,Room Price (in BDT or any other currency)
+Hotel Name,Location,Rating,Review Score,Number of   ,Room    Score,Room Type,Bed Type,Room Price (in BDT or any other currency)
 Krabi La Playa Resort - SHA Plus,Ao Nang Beach,8.2,Very Good,141,8.6,Deluxe Double or Twin Room,   1 double or 2 twins,"   146,026"
 KC Beach Club & Pool Villas,"Chaweng City Center , Chaweng",7.1,Good,193,,Double Room with Balcony and Sea View,1 queen bed,"   215,304"
 Rawai VIP Villas & Kids Park,Rawai Beach,8.3,Very Good,63,8.9,2 Bedroom Pool Villa,2 queen beds,"   435,384"
@@ -54,459 +54,459 @@ Grace Hotel,"Wattana, Bangkok",6.5,Review score,954,,Superior Double or Twin Roo
 Baan Hin Sai Resort & Spa - SHA Extra Plus,Chaweng Noi Beach,8.3,Very Good,126,8.2,Standard Double or Twin Room,   1 double or 2 twins,"   116,388"
 Papillon Resort,"Chaweng Beachfront, Chaweng",8.5,Very Good,222,8.6,Superior Bungalow,1 queen bed,"   92,329"
 Lanna Palace 2004,"Chang Khlan, Chiang Mai",6.1,Review score,25,,Standard Twin Room,2 twin beds,"   55,129"
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
-,,,,,,,,
+Santhiya Koh Yao Yai Resort & Spa,Ko Yao Yai,8.6,Excellent,"1,083",8.9,Plus Round Trip Join Speedboat As Scheduled Transfer - Supreme Deluxe Sea View,1 queen bed,"   292,272"
+SR Sea View Apartments,Patong Beach,6.8,Review score,106,,Deluxe Double Room with Sea View,1 queen bed,"   46,189"
+Grand Orlov,Patong Beach,8,Very Good,17,,Standard King Room,1 queen bed,"   75,810"
+Samed Cliff Resort,"Ao Noi Nha, Ko Samed",6.8,Review score,44,,Standard Double Room,1 king bed,"   186,322"
+Lanta Amara Resort,"Long Beach, Ko Lanta",9.4,Wonderful,63,9.7,Large Double Room,1 king bed,"   95,262"
+Nasa Bangkok - SHA PLUS Certified,Bangkok,7.9,Good,"2,688",8.1,Standard Double or Twin Room,   1 double or 2 twins,"   52,079"
+"Nature Beach Resort, Koh Lanta","Klong Nin Beach, Ko Lanta",8.4,Very Good,344,8.3,Double Room with Fan,1 full bed,"   26,201"
+Blue View House Phi Phi,Phi Phi Islands,8.1,Very Good,494,8,Double Room with Balcony,1 queen bed,"   89,279"
+Villa Navin,Jomtien Beach,6.7,Review score,368,,Deluxe Studio,1 queen bed,"   66,959"
+The Malika Hotel - SHA Extra Plus,Phuket,8.7,Excellent,489,9.2,Room with City View,1 queen bed,"   97,042"
+Forra Dive Resort Pattaya Beach,"Ko Lipe Pattaya Beach, Ko Lipe",6.9,Review score,74,,Standard Bungalow with Garden View,1 queen bed,"   60,998"
+Chanchalay Hip Hostel SHA Extra Plus,Krabi,9.1,Wonderful,473,9.2,Double or Twin room with shared bathroom (Air conditioning),   1 double or 2 twins,"   32,902"
+The Ozone Krabi Condotel,Krabi,8.3,Very Good,167,8.4,Triple Room with Mountain View,1 full bed,"   72,181"
+Wixky hotel,Nong Khai,7.9,Good,24,,Deluxe Queen Room,1 queen bed,"   64,048"
+Andaman Pearl Resort,Ao Nang Beach,8.5,Very Good,167,8.7,Deluxe Room,   1 double or 2 twins,"   82,153"
+Cliff Cottage,"Bang Bao Bay, Ko Chang",8.7,Excellent,247,8.2,Tent- Mongolian Tent for 2 Adults,2 twin beds,"   58,225"
+Phuket Beach Glamping,Rawai Beach,7.8,Good,48,,Geo Tent,1 queen bed,"   295,702"
+Bansaeo Garden and Resort,Chiang Saen,8.8,Excellent,62,9.2,Deluxe Double Room with Bath,1 queen bed,"   129,390"
+Elixir Koh Yao Yai - SHA Plus,Ko Yao Yai,8.8,Excellent,242,8.9,Superior Villa,1 full bed,"   168,386"
+Momento Resort,Pattaya South,7.1,Good,807,,Double Room with Private Bathroom,1 king bed,"   42,052"
+Sun Inn,Songkhla,8.4,Very Good,137,8.9,Standard Queen Room,1 queen bed,"   48,393"
+The Patong Center Hotel-SHA Certified,Patong Beach,7.3,Good,110,,Deluxe Double Room,1 full bed,"   49,110"
+The Chanthong Residence and Hotel Pattaya,Pattaya,8.3,Very Good,40,8.4,Standard Double Bed Room with Street View,1 king bed,"   41,806"
+Koh Phaluai Beach Bangalow,Ban Ko Nok Taphao,9.1,Wonderful,36,8.3,Bungalow with Garden View,1 full bed,"   92,190"
+Krabi River Hotel,Krabi,8.5,Very Good,359,8.5,Twin Room with Sea View,2 twin beds,"   63,469"
+Atlantis Condo Resort jomtien,Jomtien Beach,6.6,Review score,80,,Standard Apartment,"2 beds (1 king, 1 sofa bed)","   70,938"
+Kata Max Luxe1,Ban Karon,,,,,Two-Bedroom Villa,"3 beds (1 sofa bed, 2 queens)","   42,773"
+"The Hideaway, Koh Lipe","Ko Lipe Sunrise Beach, Ko Lipe",7.9,Good,258,,Double Room with Garden View,1 queen bed,"   3,765,403"
+Baan Chaylay Resort Karon,Karon Beach,7.9,Good,165,8.1,Standard Double Room,1 king bed,"   40,296"
+Cocoo-n Beach Hotel,Patong Beach,6.1,Review score,33,,Standard King Room,1 king bed,"   28,071"
+Chom Suan Homestay,"Klong Chao Beach, Ko Kood",7,Good,13,,Deluxe Double Room,1 full bed,"   64,695"
+Hotel Scarlett,Ban Ba Ngan,9.1,Wonderful,39,9.6,Superior Double Room,1 king bed,"   80,869"
+Phranang Place- SHA Extra,Ao Nang Beach,8.2,Very Good,305,8.4,Superior Double Room,   1 double or 2 twins,"   66,543"
+Tropical Garden Bungalow,Phi Phi Islands,6.8,Review score,339,,Fan Bungalow Twin Bed,2 twin beds,"   52,403"
+Easy Life Bungalows,Haad Yao,7.2,Good,52,,Superior Bungalow,1 full bed,"   35,582"
+White Orchid Inn II,"Khlong Toei, Bangkok",5.2,Review score,82,,Superior Double Room,1 full bed,"   40,758"
+Rawai Whale Resort,Rawai Beach,8.1,Very Good,41,8.2,King Studio,1 queen bed,"   50,277"
+NN Apartment,Pattaya South,8.6,Excellent,175,9,Deluxe Double Room,1 king bed,"   37,847"
+7 Days Premium Hotel Pattaya,"Pattaya Walking Street, Pattaya South",7.4,Good,497,,Deluxe Double or Twin Room with City View,   1 double or 2 twins,"   69,172"
+Grand Mansion Hotel,Krabi,7.5,Good,26,8,Standard Double or Twin Room with Air Conditioning,   1 double or 2 twins,"   36,876"
+VX The Fifty,"Khlong Toei, Bangkok",7.5,Good,243,,Bed in 4-Bed Dormitory Room,1 full bed,"   27,107"
+"Baan Suan Kayoo 2, ??????????????????? ??????????? ????????",Ko Phayam,8.9,Excellent,52,8.4,Bungalow with Fan,1 queen bed,"   30,116"
+Phi Phi Sand Sea View Resort,"Tonsai Bay, Phi Phi Islands",7.1,Good,"1,197",,Standard Double Room (Building),1 queen bed,"   62,107"
+"Pailin Pool Villa, Hua Hin",Hua Hin,8.8,Excellent,54,9.2,Superior Villa,1 queen bed,"   199,843"
+Silver Resortel,Patong Beach,8.1,Very Good,290,8.6,Standard King Room,1 king bed,"   54,159"
+Veranda Lodge,Hua Hin,7.8,Good,304,8.1,Garden Bungalow,1 king bed,"   242,051"
+Golden Nest Hotel Suvarnabhumi,Bangkok,8,Very Good,187,8.5,Economy Double Room,1 king bed,"   83,225"
+JJ Beach Resort & JJ Seafood,"Aow Yai Beach, Ko Phayam",9.1,Wonderful,121,9,Deluxe Bungalow,1 queen bed,"   70,240"
+64House,"Chang Moi, Chiang Mai",8.2,Very Good,81,8.2,Triple Room with Bath,"2 beds (1 twin, 1 queen)","   78,581"
+Nam Talay Resort,Pran Buri,8.2,Very Good,115,8.5,Standard Double Room,1 full bed,"   49,445"
+Baan Suan Rim Klong,"Klong Khong Beach, Ko Lanta",9,Wonderful,193,9.1,Superior Double Room,1 king bed,"   49,882"
+O'nya Phuket Hotel - SHA Extra Plus,Phuket,8.5,Very Good,112,9.1,Superior Double or Twin Room,"3 beds (2 twins, 1 queen)","   59,650"
+The Loft Panwa Resort,Panwa Beach,8.8,Excellent,88,8.9,Standard Double or Twin Room with Garden View,Multiple bed types,"   93,327"
+Sugar Marina Resort - ART - Karon Beach - SHA Plus,Karon Beach,8.2,Very Good,607,8.4,Deluxe Double or Twin Room,Multiple bed types,"   108,659"
+Park 38 Hotel - SHA Plus,Phuket,7.9,Good,23,,Superior Twin Room,2 twin beds,"   74,238"
+Erawan House,"Khaosan, Bangkok",7.5,Good,259,,Superior Double Room,1 full bed,"   67,930"
+Rocco Hua Hin Beach Seaview,Hua Hin,7.5,Good,315,,Studio with Sofa Bed,"2 beds (1 sofa bed, 1 queen)","   139,738"
+Has Pattaya,Pattaya South,8.2,Very Good,94,8.8,Superior Double or Twin Room with City View,1 king bed,"   110,628"
+Madina Rayong Hotel,Rayong,7.6,Good,5,8,Standard Twin Room,2 twin beds,"   109,335"
+Saisawan Beach Resort,Na Jomtien,7.8,Good,79,8.4,Deluxe Room with City View,   1 double or 2 twins,"   105,037"
+????????????,Ban Don Rak,8.6,Excellent,33,9,Double Room with Private Bathroom,1 king bed,"   35,628"
+Jaroonwej Bangsaen,Bangsaen,5.8,Review score,128,,Standard Apartment,1 king bed,"   58,435"
+P'Un House,"Sairee Beach, Ko Tao",7.6,Good,127,,Standard Double Room with Air-Conditioning,1 full bed,"   48,554"
+Srisomthai Hotel,Ubon Ratchathani,7.8,Good,12,8.1,Standard Double Room,1 full bed,"   32,994"
+Andaman Bay Bungalow,"Klong Khong Beach, Ko Lanta",7.1,Good,72,,Budget Double Room,1 full bed,"   22,643"
+President Hotel Udonthani,Udon Thani,8.1,Very Good,80,8.4,Deluxe Double Room,1 queen bed,"   60,490"
+?????????????????,Sangkhla Buri,8,Very Good,43,8.4,Double Room,1 king bed,"   61,137"
+Phalarn Inn Resort,Mae Nam,7.5,Good,179,,Two-Bedroom Cottage,"2 beds (1 full, 1 queen)","   116,451"
+Poseidon Bungalows,Khao Lak,7.9,Good,240,,Bungalow with Sea View,"3 beds (1 full, 2 bunk beds)","   94,886"
+65 hostel chiangmai,Chiang Mai,6.7,Review score,40,,Double or Twin Room with Bathroom,1 full bed,"   32,347"
+65 hostel chiangmai,Chiang Mai,6.7,Review score,40,,Double or Twin Room with Bathroom,1 full bed,"   32,347"
+Diary Suite,Nakhon Pathom,8.5,Very Good,205,8.8,Deluxe Twin Room,2 twin beds,"   54,991"
+Shanti Lodge Phuket,Chalong,7.8,Good,138,,Double Room with Shared Bathroom,"3 beds (2 twins, 1 queen)","   49,556"
+????????????? ? ????????(Once upon a time),"Chiang Khan Walking Street, Chiang Khan",7.5,Good,38,8,Double Room with Shared Bathroom,1 king bed,"   32,994"
+Rasta view Bangalows,Ban Khlong Kloi,7.4,Good,29,,Double Room,1 full bed,"   29,113"
+Garden Corner Resort & Hotel,Phitsanulok,7.4,Good,157,,Standard King Room,1 king bed,"   38,817"
+D5 Hotel ???? ?????????,Chon Buri,8.7,Excellent,179,8.8,Deluxe Double Room,1 queen bed,"   32,445"
+U Hostel Haad Rin,Ko Phangan,8,Very Good,84,,Economy Quadruple Room,2 bunk beds,"   113,986"
+No. 8 Pai,Pai,8.4,Very Good,181,8.6,Standard Double Room with Fan,1 full bed,"   32,347"
+Norn Talay Surin Beach Phuket,Surin Beach,7.9,Good,714,8.1,Deluxe Double or Twin Room with Sea View,"2 beds (1 sofa bed, 1 queen)","   344,861"
+Oriole Residence - Suvarnabhumi,Ban Khlong Thewa,8.8,Excellent,166,9.2,Standard King Room,1 king bed,"   90,573"
+?????????????? ???????????? ???? Impact,Thung Si Kan,7.4,Good,68,,Standard Twin Room,2 twin beds,"   58,919"
+"Holiday Style Ao Nang Beach Resort, Krabi","Nopparat Thara Beach, Ao Nang Beach",8.2,Very Good,"1,098",8.5,Superior Double or Twin Room with Garden View,1 full bed,"   102,204"
+Escape Beach Resort - SHA Extra Plus Certified,Mae Nam,8.2,Very Good,"1,583",8.6,Economy Double Room,1 king bed,"   119,778"
+Avani Plus Riverside Bangkok Hotel,"Thonburi, Bangkok",9,Wonderful,754,9.4,Avani River View Two Bedroom Suite,"4 beds (2 twins, 1 king, 1 sofa bed)","   1,724,635"
+VELA Dhi Udon Thani,Udon Thani,8.9,Excellent,269,9.4,Deluxe Twin Room,2 twin beds,"   145,564"
+Anahata Resort - SHA Plus,Lipa Noi,8.9,Excellent,339,9.1,Superior Bungalow,1 full bed,"   178,558"
+Outrigger Surin Beach Resort - SHA Extra Plus,Surin Beach,9.1,Wonderful,355,9.5,Grand Surin Suite 1 King,1 king bed,"   548,629"
+Yao Yai Beach Resort,Ko Yao Yai,8.5,Very Good,364,8.8,Standard Room - No Sea View,1 queen bed,"   152,717"
+The Peri Hotel Khao Yai,Phayayen,8,Very Good,235,8.4,King Room with Mountain View,1 king bed,"   197,905"
+Khao Sok Jungle Huts Resort,Khao Sok National Park,8.2,Very Good,800,8.1,Bungalow with Air-Conditioner,1 full bed,"   65,989"
+The Sunnery Ville,Lom Kao,8.4,Very Good,118,8.7,King Room with Mountain View,1 king bed,"   102,865"
+Anana Ecological Resort Krabi-SHA Extra Plus,Ao Nang Beach,8.9,Excellent,"1,128",9.2,Superior Double or Twin Room,1 king bed,"   206,895"
+Hotel Ibis Samui Bophut,Bophut,7.6,Good,"1,183",8,Standard Twin Room,2 twin beds,"   93,885"
+VST Residence -SHA PLUS Certified,Ban Khlong Bang Ping,8.4,Very Good,79,8.8,Superior Twin Room,2 twin beds,"   80,222"
+VST Residence -SHA PLUS Certified,Ban Khlong Bang Ping,8.4,Very Good,79,8.8,Superior Twin Room,2 twin beds,"   80,222"
+Na Siri Lake View,Samut Prakan,7.6,Good,"1,019",8,Apartment with Garden View,2 twin beds,"   76,392"
+Hivetel,Chalong,7.8,Good,222,8.2,Standard Double Room,1 king bed,"   84,230"
+Hotel Tide Phuket Beach front - SHA Plus,Phuket,8.4,Very Good,"1,664",9,Deluxe Room,1 queen bed,"   192,737"
+Amatara Welleisure Resort - SHA Extra Plus,Panwa Beach,8.6,Excellent,727,8.9,Cape Panwa Suite,1 king bed,"   510,887"
+Style Paidoi Resort,Ban Pa Yang (3),9.6,Exceptional,7,9.6,Tent,1 full bed,"   74,780"
+The Heritage Chiang Rai Hotel and Convention - SHA Extra Plus,Chiang Rai,8.7,Excellent,828,9.1,Deluxe Double Room,1 king bed,"   109,504"
+Koh Tao Relax Freedom Beach Resort,"Chalok Baan Kao, Ko Tao",9,Wonderful,537,9.1,Superior House - Hillside (Free pick up and drop off at Mae Haad Pier),1 king bed,"   153,882"
+@T Boutique Hotel,Klong Wan,8.2,Very Good,275,8.4,Family Room,"3 beds (1 full, 2 bunk beds)","   238,797"
+Rayong Marriott Resort & Spa,Klaeng,7.9,Good,340,8.3,Deluxe King Room with Mountain View,"2 beds (1 full, 1 king)","   316,862"
+Tiki Beach Koh Phangan,Ban Tai,8,Very Good,532,,Deluxe Bungalow with Garden View,"2 beds (1 twin, 1 full)","   166,733"
+Coconut Beach Bungalows,Chaloklum,9.3,Wonderful,100,9.2,Two-Bedroom Bungalow,2 queen beds,"   339,875"
+Venice Krabi Villa Resort- SHA Plus,Ao Nam Mao,8.9,Excellent,345,9.6,Lagoon Grand Deluxe Twin,2 twin beds,"   203,026"
+O2 Hotel Lopburi,Lop Buri,7.6,Good,425,8.2,Superior King Room,1 king bed,"   54,991"
+Hotel Agnes,Buriram,8.8,Excellent,53,9.2,Large Twin Room,Multiple bed types,"   93,161"
+The Dorm Hostel,Ban Lo Long,8.7,Excellent,90,8.9,Bunk Bed in Mixed Dormitory Room,1 queen bed,"   40,269"
+Somerset Pattaya - SHA Plus,Pattaya,8.9,Excellent,159,9.3,Deluxe Twin Room,2 twin beds,"   323,004"
+Inpawa Hotel,Ban Phai,8.2,Very Good,99,8.6,Superior Double Room,1 queen bed,"   77,634"
+Chiangkhong Teak Garden Riverfront Onsen Hotel- SHA Extra Plus,Chiang Khong,8.3,Very Good,192,8.7,Resort Garden View,Multiple bed types,"   87,809"
+Island Escape by Burasari - SHA Extra Plus,Phuket,8.5,Very Good,"1,388",9.2,Deluxe Room with Schedule Boat Transfer,   1 double or 2 twins,"   318,817"
+???????????????? ???????? Double D hotel,Pak Kret,8.6,Excellent,43,8.9,Deluxe King Room,1 king bed,"   86,756"
+"Tawaravadee Resort, BW Signature Collection","304 Industrial Park, Si Maha Phot",8.2,Very Good,96,8.8,Superior Double Room,1 full bed,"   88,520"
+Lub d Phuket Patong,Patong Beach,8.1,Very Good,893,8.4,Junior Twin Room,2 twin beds,"   85,926"
+The Waters Khao Lak by Katathani - SHA Extra Plus,"Bang Niang Beach, Khao Lak",8.7,Excellent,358,9,Upper Pool Access Room,   1 double or 2 twins,"   157,856"
+VILLA DEVA RESORT AND HOTEL,"Sathorn, Thung Maha Mek",9.7,Exceptional,9,9.7,Deluxe Twin Pool View,2 twin beds,"   511,090"
+Panviman Chiang Mai Spa Resort,Mae Rim,8.7,Excellent,257,8.9,Valley Deluxe Double Room,1 king bed,"   191,486"
+Napa Hotel Ratchaburi,Ratchaburi,8.5,Very Good,134,8.8,Superior Twin Room,2 twin beds,"   78,558"
+Centre Point Hotel Terminal21 Korat,Nakhon Ratchasima,8.9,Excellent,866,9.4,Deluxe King Room 2 Pax,1 king bed,"   124,492"
+Fortune River View Hotel Nakhon Phanom,Nakhon Phanom,8.2,Very Good,324,8.6,Deluxe River View Room,2 twin beds,"   153,903"
+Fortune Riverview Hotel Chiang Khong,Chiang Khong,8,Very Good,189,8.5,Superior Double or Twin Room with Pool View,Multiple bed types,"   113,118"
+"Holiday Inn Resort Samui Bophut Beach, an IHG Hotel","Fisherman Village, Bophut",8.7,Excellent,173,9.2,Standard King Room with Balcony,1 king bed,"   245,388"
+Outrigger Khao Lak Beach Resort - SHA Extra Plus,"Bangsak Beach, Khao Lak",9.2,Wonderful,407,9.6,Deluxe Garden Balcony - King Bed,1 king bed,"   173,243"
+Outrigger Koh Samui Beach Resort - SHA Extra Plus,Lamai,8.5,Very Good,290,9.1,Superior Balcony -King Bed,1 king bed,"   225,835"
+Katiliya Mountain Resort And Spa,Mae Salong Nai,8.7,Excellent,161,9,Standard Suite,1 king bed,"   285,952"
+Grand Inter Hotel,Samut Sakhon,8.2,Very Good,464,8.4,Deluxe Double Room with Balcony,1 king bed,"   57,084"
+JonoX Phuket Karon Hotel,Karon Beach,8.6,Excellent,203,8.7,Recharge,Multiple bed types,"   143,756"
+Scandia Beach Hotel,Jomtien Beach,7.3,Good,775,,Superior Twin Room with Balcony,2 twin beds,"   39,771"
+Come Moon Loft Hotel,Phrae,8.5,Very Good,321,8.8,Double Room,1 full bed,"   45,998"
+Lady Naya Villas - SHA Extra Plus,Rawai Beach,9.1,Wonderful,315,9.3,Deluxe Double or Twin Room with Pool Access,Multiple bed types,"   135,859"
+Fortune View Khong Hotel Nakhon Phanom,Nakhon Phanom,8.4,Very Good,343,8.8,Superior Double Room with City View,1 full bed,"   95,793"
+Dusit Thani Krabi Beach Resort - SHA Extra Plus,Klong Muang Beach,8.7,Excellent,515,9.1,Deluxe King Room,1 king bed,"   368,524"
+Centra by Centara Hotel Mae Sot,Mae Sot,7.7,Good,143,8.3,Superior Twin Room,2 twin beds,"   63,237"
+The Oceanic Sportel - SHA Extra Plus,Phuket,8.2,Very Good,669,9.2,Deluxe King Room,1 king bed,"   114,926"
+Novotel Marina Sriracha & Koh Si Chang,Si Racha,8.5,Very Good,655,9.1,"Premiere, Deluxe Room, Lounge Access, Sea View - 1 King Bed Sea View and Lounge Access",1 king bed,"   233,253"
+????????3???????????????????????,Ban Ko Mu (1),8,Very Good,1 review,10,Budget Double Room,1 full bed,"   32,994"
+Riverfront Hotel Mukdahan,Mukdahan,7.8,Good,206,8.1,Standard Double Room,1 queen bed,"   66,959"
+The Journey Hotel Bangna,Samut Prakan,8.7,Excellent,469,9.1,Standard King Room,1 full bed,"   68,725"
+X10 Khaolak Resort SHA Plus,Khao Lak,8.9,Excellent,178,9.2,Deluxe Double or Twin Room - Family Wing,   1 double or 2 twins,"   136,007"
+Namaka Resort Kamala - SHA Extra Plus,Kamala Beach,7.8,Good,905,8.3,Premier Room with Sea View,1 queen bed,"   217,410"
+SKYVIEW Hotel Bangkok - SHA Extra Plus,"Khlong Toei, Bangkok",8.6,Excellent,"3,376",9.2,Premier,Multiple bed types,"   360,687"
+Diamond Resort Phuket - SHA,Bang Tao Beach,8.8,Excellent,754,9,Deluxe Suite Double,"2 beds (1 full, 1 sofa bed)","   222,840"
+Blue Sky Residence Airport,Ban Bang Phli Yai,7.9,Good,221,8.3,Superior Twin Room,2 twin beds,"   57,039"
+Sukantara Cascade Resort and Spa,Mae Rim,8.8,Excellent,85,8.8,Deluxe Jacuzzi Panorama,1 queen bed,"   305,915"
+Huernnana Boutique Hotel,Phrae,7,Good,95,,Nana Deluxe Twin Room,2 twin beds,"   139,908"
+Amari Phuket,Patong Beach,8.2,Very Good,"1,213",8.4,One-Bedroom Suite,1 queen bed,"   610,760"
+Paripas Patong Resort - SHA Extra Plus,Patong Beach,8,Very Good,"1,354",8.4,Deluxe Twin or Double Room with Balcony (No View),   1 double or 2 twins,"   116,399"
+The Canal 304,"304 Industrial Park, Si Maha Phot",8.9,Excellent,158,8.9,Luxury Suite,1 king bed,"   155,268"
+Mövenpick Resort Khao Yai,Ban Wang Sai,7.6,Good,397,8,Deluxe King Room,1 full bed,"   260,327"
+Phuphavaree by Tahug Sai Yok,Ban Ai Hit,7.3,Good,12,,Tent,1 queen bed,"   55,379"
+La Miniera Pool Villas Pattaya - SHA Plus,Nong Prue,8.8,Excellent,27,9.4,Pool Villa,Multiple bed types,"   495,891"
+Phu Pha Phung Resort,Suan Phung,7.6,Good,402,,Villa Family,"9 beds (7 twins, 2 fulls)","   438,216"
+Limon Villa Khao Yai by Tolani,Wangkata,7.9,Good,86,8.1,Deluxe Villa,1 king bed,"   132,920"
+Novotel Bangkok IMPACT,Nonthaburi,8.4,Very Good,722,8.9,Executive King Room,1 king bed,"   223,185"
+Samui Resotel Beach Resort - SHA extra plus,"Chaweng Beachfront, Chaweng",8.1,Very Good,825,8.5,Standard Double Room,1 king bed,"   256,658"
+Anchalee Resort,Bang Saphan,7.8,Good,103,,Double Room,1 full bed,"   43,022"
+Regent Lodge Lampang,Lampang,7.8,Good,597,8.1,Superior Double Room,1 full bed,"   29,113"
+Atta Lakeside Resort Suite - SHA Plus Certified,Mu Si,8.7,Excellent,723,8.9,One-Bedroom Suite,"2 beds (1 king, 1 sofa bed)","   303,475"
+"Kimpton Maa-Lai Bangkok, an IHG Hotel","Pathumwan, Bangkok",9.4,Wonderful,474,9.7,Essential Room,Multiple bed types,"   628,313"
+Eastin Thana City Golf Resort Bangkok,Samutprakarn,8.4,Very Good,579,8.9,Superior Room,2 twin beds,"   103,192"
+Sukhothai Heritage Resort - SHA PLUS,Sawankhalok,8.2,Very Good,48,8.5,Superior King Room with Pool View,1 king bed,"   142,774"
+El Matcha Lanta Resort,Phra Ae beach,8.9,Excellent,194,9.3,Bungalow with Garden View,1 queen bed,"   93,900"
+Koh Yao Yai Village - SHA Extra Plus,Ko Yao Yai,8.9,Excellent,882,9,Deluxe Villa,1 king bed,"   210,463"
+Pen Ta Hug Hotel,Ubon Ratchathani,8,Very Good,576,8.2,Superior Double Room,1 queen bed,"   57,579"
+Panviman Resort Koh Phangan - SHA Extra Plus,Thong Nai Pan Noi,8.6,Excellent,500,8.8,Executive Suite,"2 beds (1 sofa bed, 1 queen)","   2,018,484"
+The X10 Nordic Tent and Glamping Pool Villa Khaoyai ??????? - SHA Certified,Ban Thung Sawang,8,Very Good,23,8.3,Villa with Private Pool,1 king bed,"   271,084"
+THE WOOD,Surin,8.4,Very Good,189,8.8,Standard Double Room,1 king bed,"   80,869"
+Karon Phunaka Resort,Karon Beach,8.2,Very Good,136,8.5,Superior Double or Twin Room with Sea View,   1 double or 2 twins,"   138,124"
+The Sun resort Ratchaburi,Ratchaburi,8.4,Very Good,599,8.5,Deluxe King Room,1 king bed,"   36,391"
+Bella Villa Cabana,Na Kluea,7.5,Good,87,8,Junior Suite with Pool View,"2 beds (1 twin, 1 full)","   200,462"
+Dolphin Bay Resort SHA-EXTRA PLUS HOTEL,Sam Roi Yot,8.2,Very Good,219,8.2,Deluxe Double or Twin Room with Balcony,Multiple bed types,"   153,571"
+KT Knight Hotel,Surin,8.8,Excellent,152,9,Deluxe Twin Room,"2 beds (1 twin, 1 full)","   48,521"
+Raya Buri Resort Kanchanaburi,Si Sawat,7.1,Good,102,,Hillside Superior Room,"2 beds (1 twin, 1 full)","   141,100"
+Destination Resorts Phuket Karon Beach - SHA Extra Plus,Karon Beach,7.3,Good,505,,Standard King Room,1 queen bed,"   209,612"
+Pamookkoo,Kata Beach,8.1,Very Good,286,8.2,Deluxe Premium Room,1 king bed,"   291,127"
+Taris Art Hotel Phrae,Phrae,7.5,Good,372,,Superior Double Room,1 full bed,"   51,879"
+Happy Home,Ratchaburi,8.4,Very Good,469,8.7,Deluxe Double Room,1 full bed,"   41,922"
+Novotel Bangkok Suvarnabhumi Airport,Lat Krabang,7.9,Good,"4,378",8.4,Superior Twin Room,2 twin beds,"   345,410"
+Pullman Pattaya Hotel G,North Pattaya,7.8,Good,"1,305",8.1,Deluxe Twin Room,2 twin beds,"   195,389"
+INBOX Living Rimkhong,Chiang Khan,8,Very Good,189,8.2,Superior Twin Room,2 twin beds,"   39,593"
+ISTY Hotel -SHA Extra Plus,"Si Phum, Chiang Mai",8.6,Excellent,"1,257",8.8,Standard Double Room,1 king bed,"   73,183"
+ARAYA HOTEL,Uttaradit,7.7,Good,155,,King Room,1 king bed,"   64,695"
+Glai Gan Place Hotel,Sara Buri,7.5,Good,130,8.1,Standard Double Room,1 king bed,"   77,172"
+Centara Hotel & Convention Centre Udon Thani,Udon Thani,8.4,Very Good,693,8.9,Superior Double or Twin Room,1 king bed,"   135,649"
+"Splash Beach Resort, Maikhao Phuket - SHA Extra Plus",Mai Khao Beach,7.4,Good,995,,Deluxe Twin Room No Balcony,2 twin beds,"   153,443"
+BN Resort,Ban Nong Chum Saeng,7.8,Good,73,,Studio with Lake View,1 king bed,"   42,052"
+Khong Chiam Orchid Riverside Resort,Khong Chiam,8.5,Very Good,90,8.7,Quadruple Room with Garden View,2 full beds,"   271,072"
+BlueSotel SMART Krabi Aonang Beach - Adults only - SHA Extra Plus,Ao Nang Beach,8.6,Excellent,"1,760",8.9,Double Room with Pool View,   1 double or 2 twins,"   166,975"
+Baan Sabaijai Resort & Rehab,That Phanom,8.1,Very Good,62,8.4,Small Double Room,1 queen bed,"   45,286"
+The Gems Mining Pool Villas Pattaya - SHA Extra Plus,Nong Prue,9,Wonderful,374,9.3,Topaz Jacuzzi,2 twin beds,"   400,493"
+Kalima Resort and Villas Khao Lak - SHA EXTRA PLUS,Khao Lak,8.8,Excellent,"1,085",9.1,Deluxe Double or Twin Room,Multiple bed types,"   267,172"
+The Gems Mining Pool Villas Pattaya - SHA Extra Plus,Nong Prue,9,Wonderful,374,9.3,Topaz Jacuzzi,2 twin beds,"   400,493"
+Kalima Resort and Villas Khao Lak - SHA EXTRA PLUS,Khao Lak,8.8,Excellent,"1,085",9.1,Deluxe Double or Twin Room,Multiple bed types,"   267,172"
+Rnana Grand,Phangnga,8.1,Very Good,99,9,Standard Double Room,1 king bed,"   67,667"
+Taakradan Valley Resort ????????????????? ???????,Si Sawat,8,Very Good,46,8.3,Superior Twin Room,2 queen beds,"   56,069"
+Jomkitti Boutique Hotel,"Si Phum, Chiang Mai",8.9,Excellent,429,9.4,Deluxe King with Balcony,1 king bed,"   178,274"
+Fortune D Hotel Loei,Loei,7.7,Good,129,,Superior Double Room,1 full bed,"   67,293"
+Pongsin Resort,Khun Han,9.2,Wonderful,91,9.4,Deluxe Double Room,1 king bed,"   54,991"
+Hotel de l'amour SHA PLUS,Prakhon Chai,8.6,Excellent,79,9.1,Premier Suite,2 king beds,"   184,381"
+The Harmony Ville,Phitsanulok,8.2,Very Good,364,8.5,Deluxe Double Room with Bath,1 queen bed,"   67,949"
+T2 Adira Pattaya,Jomtien Beach,9.1,Wonderful,38,9.2,Premier King Room,1 full bed,"   55,841"
+Centara Korat,Nakhon Ratchasima,8.9,Excellent,304,9.3,Deluxe King,1 king bed,"   125,460"
+Koh Ma Beach Resort - SHA Extra Plus,Mae Haad,7.7,Good,679,8.1,Deluxe Double Room,1 full bed,"   118,694"
+The Ring Border,Ban Khlong Phruan,8.3,Very Good,23,8.7,Superior Double Room,1 king bed,"   61,537"
+ON Thapae Chiangmai,"Chang Moi, Chiang Mai",9.4,Wonderful,547,9.7,Standard Double Room,1 king bed,"   158,503"
+Feungfah Litz,Phetchabun,8.3,Very Good,272,8.9,Standard King Room,1 king bed,"   44,750"
+"Holiday Inn Express Phuket Patong Beach Central, an IHG Hotel - SHA Plus",Patong Beach,8,Very Good,"1,629",8.5,Standard Room,   1 double or 2 twins,"   175,432"
+Chatrium Golf Resort Soi Dao Chanthaburi,Ban Thap Sai,8.7,Excellent,53,8.8,Deluxe Mountain View Twin Bed,2 twin beds,"   192,976"
+Baan Nern Khao Resort Pattaya,Ban Huai Yai,9.3,Wonderful,63,9.4,Two-Bedroom House,2 queen beds,"   264,926"
+Novotel Bangkok Future Park Rangsit,Pathum Thani,8.7,Excellent,358,9.4,Superior Twin Room,2 twin beds,"   136,364"
+???????? ??????? (StockHome Khao Yai),Khanong Phra,8.9,Excellent,73,9.1,Standard Double or Twin Room,1 king bed,"   135,749"
+RED PEARL BEACH RESORT,Chaloklum,8.3,Very Good,290,8.5,King Room with Pool View,1 king bed,"   136,895"
+Thong Nai Pan Beach Residence,Thong Nai Pan Yai,8.9,Excellent,176,8.8,Deluxe Double Room with Balcony,1 king bed,"   194,085"
+Mamaungpaa Hill resort,Ta Khli,8,Very Good,59,8,Triple Room with Pool View,"2 beds (1 twin, 1 queen)","   74,399"
+Mela Garden Retreat Cottage,Muak Lek District,8.1,Very Good,45,8.1,Double Room with Terrace,Multiple bed types,"   175,288"
+Mookies Bungalows,Ko Mook,9,Wonderful,301,8.9,Bungalow,1 full bed,"   67,098"
+The Garden 304,"304 Industrial Park, Si Maha Phot",8.5,Very Good,89,9.1,1-Bedroom Deluxe City View,1 twin bed,"   98,158"
+Nautilus Right on the Beach - Adult Only - SHA Extra Plus,"Phra Ae Beach, Ko Lanta",9,Wonderful,85,9.1,Standard Double Room,1 king bed,"   154,880"
+Emporium Suites by Chatrium,"Khlong Toei, Bangkok",8.4,Very Good,364,8.7,Deluxe King Room,1 king bed,"   320,240"
+"Sarikantang Resort & Spa, Koh Phangan","Leela Beach, Haad Rin",8.3,Very Good,768,8.6,Deluxe Double or Twin Room with Pool View,1 queen bed,"   224,801"
+Siam View Hotel and Residence,Pattaya,8.6,Excellent,356,8.7,Standard Double Room,1 queen bed,"   95,879"
+Ray Hotel Buriram,Buriram,8.1,Very Good,387,8.1,Deluxe Double Room,1 king bed,"   76,571"
+Wind Beach Resort,"Sairee Beach, Ko Tao",8,Very Good,682,8.2,King Room with Balcony,1 full bed,"   120,980"
+Centara Grand Mirage Beach Resort Pattaya - SHA Extra Plus,North Pattaya,8.4,Very Good,"1,187",8.5,Deluxe Ocean View King,1 king bed,"   401,398"
+Hilton Hua Hin Resort & Spa,"Hua Hin Night Market, Hua Hin",8.2,Very Good,"1,892",8.7,Classic Twin Room with Ocean View,2 twin beds,"   287,322"
+Citygate Kamala Resort and Residence,Kamala Beach,7.4,Good,544,,Junior Suite King,"2 beds (1 king, 1 sofa bed)","   98,634"
+Sun Moon Hotel,Loei,7.2,Good,141,,Standard Double Room,1 queen bed,"   38,170"
+Chill House ??????????,Ban Mae Salap,8.3,Very Good,127,8.5,Superior Queen Room,1 twin bed,"   36,044"
+JK LIVING Hotel And Service Apartment,Chachoengsao,8.9,Excellent,163,9.2,Standard King Size Bed,1 king bed,"   65,250"
+Legendha Sukhothai Hotel - SHA certified,"Mueang Kao, Sukhothai",8.5,Very Good,609,8.8,Superior Double or Twin Room,Multiple bed types,"   146,821"
+Tour De Phuket Hotel - SHA Plus,Thalang,8.4,Very Good,183,9,Deluxe Double or Twin Room,Multiple bed types,"   57,387"
+Phu Morinn Cafe&Camping,Mon Jam,8.1,Very Good,128,8,Budget Double Room,1 twin bed,"   186,322"
+"Sindhorn Midtown Hotel Bangkok, Vignette Collection - an IHG Hotel","Pathumwan, Bangkok",9,Wonderful,"1,996",9.5,Premium Twin Room,2 twin beds,"   330,051"
+Chao Phraya Home,Ban Bon,7.7,Good,76,,Double Room,1 queen bed,"   35,744"
+Tanouy Garden,Baan Khai,8.1,Very Good,355,,One-Bedroom House,2 twin beds,"   123,105"
+Khao Sok River & Jungle Resort,Khao Sok National Park,9.1,Wonderful,788,9,Queen Room with Garden View,1 queen bed,"   86,756"
+Suansin Lanna Hotel,Tak,7.8,Good,385,8.1,Superior King Room,1 queen bed,"   38,817"
+Ratana Hotel Rassada - SHA Extra Plus,Phuket,7.8,Good,293,8.4,Superior Double or Twin Room,Multiple bed types,"   70,980"
+De Chai the Deco Chiang Mai - SHA Plus,"Chang Moi, Chiang Mai",8.9,Excellent,602,9.4,Two bedroom Premier Suite,2 king beds,"   331,228"
+Koh Tao Heritage,Ko Tao,8.3,Very Good,"1,266",8.7,Superior Triple Room with Sea View,"2 beds (1 twin, 1 king)","   163,221"
+BEAR’S DEN HOTEL PATTAYA,Jomtien Beach,7.9,Good,181,8.3,Twin Room with Balcony,2 twin beds,"   68,845"
+Pru Valley Thaley Tai Resort,Ban Don Phlap (1),8.6,Excellent,70,9,King Room with Garden View,1 king bed,"   61,460"
+PhiPhi Andaman Resort,"Tonsai Bay, Phi Phi Islands",7.3,Good,739,,Standard Queen Room,1 full bed,"   101,479"
+Avani Plus Khao Lak Resort,"Bangsak Beach, Khao Lak",9.2,Wonderful,66,9.5,Deluxe Room,1 king bed,"   231,915"
+TUI BLUE Khao Lak Resort - SHA Plus,"Khao Lak Beach, Khao Lak",8.8,Excellent,122,9.4,Deluxe Double or Twin Room - Adults Only,   1 double or 2 twins,"   126,220"
+M Village Hostel,"Dannok, Sadao",8.1,Very Good,136,8.4,Deluxe Twin Room,2 twin beds,"   35,582"
+"Coombs Cottage, Khaoyai, Mu Si",Ban Rai Khlong Sai,8.7,Excellent,55,8.9,Three-Bedroom House,"4 beds (2 twins, 2 queens)","   375,305"
+Zenseana Resort & Spa - SHA Plus,Patong Beach,8,Very Good,"1,422",8.6,Premier Room,Multiple bed types,"   152,773"
+Boutique Resort Private Pool Villa - SHA Extra Plus,Ban Pa Khlok,8.5,Very Good,194,8.9,"2 Bedroom Suite Private Pool Villa With Bathtub (Free airport pick up minimum 3 nights, 25% discount on food and beverages)","3 beds (2 twins, 1 king)","   327,195"
+Hideaway Resort Banchang,Ban Chang,9.3,Wonderful,68,9.6,Deluxe Studio,1 queen bed,"   126,294"
+Bandara Phuket Beach Resort - SHA Extra Plus,Panwa Beach,8.3,Very Good,464,8.7,Superior Double or Twin Room,Multiple bed types,"   141,226"
+Ascott Embassy Sathorn Bangkok - SHA Plus Certified,"Sathorn, Bangkok",8.9,Excellent,425,9.4,Deluxe King Room,1 queen bed,"   306,325"
+Shama Yen-Akat Bangkok,"Sathorn, Bangkok",9.2,Wonderful,488,9.5,King Room with Balcony,1 king bed,"   162,952"
+Oriental Residence Bangkok,"Pathumwan, Bangkok",8.8,Excellent,371,9.2,Junior Suite King,1 king bed,"   398,516"
+Privacy Residence Lopburi,Lop Buri,8.1,Very Good,202,8.3,Standard Double Room,1 queen bed,"   38,170"
+Poonsiri Resort Aonang-SHA Extra Plus,Ao Nang Beach,8.7,Excellent,604,8.9,Superior Twin Room,"3 beds (2 twins, 1 sofa bed)","   180,732"
+The Mud - SHA Plus Certified,Ban Bang Po,8.4,Very Good,460,8.9,Deluxe Villa,1 king bed,"   203,477"
+Santhiya Phuket Natai Resort & Spa,Natai Beach,8.8,Excellent,139,9.3,Deluxe Pool Suite,"2 beds (1 king, 1 sofa bed)","   344,891"
+Melia Koh Samui - SHA Extra Plus,Choeng Mon Beach,9.2,Wonderful,800,9.5,Deluxe Room,Multiple bed types,"   464,384"
+The O-Zone Airport Inn,Ban Khlong Prawet,7.5,Good,214,,Standard King Room,1 king bed,"   58,225"
+The Space Hotel Lampang,Lampang,8.3,Very Good,67,8.9,Deluxe King Room,1 queen bed,"   83,479"
+Cave Lodge,Pang Mapha,9,Wonderful,103,8.5,Queen Room with Balcony,1 full bed,"   57,579"
+A-Te Chumphon Hotel,Chumphon,7.9,Good,515,8.2,Deluxe Double Room,Multiple bed types,"   122,749"
+"S Bangkok Hotel, Navamin",Ban Khi Sua,8.3,Very Good,166,8.9,Standard Twin Room,2 twin beds,"   84,427"
+Sorin hotel,Surin,8.2,Very Good,79,8.5,Deluxe Room,1 queen bed,"   94,325"
+NIDHRA ????? ??????????,Ban Lat Krachaeng,9.5,Exceptional,"1,067",9.7,Studio Apartment,1 queen bed,"   58,641"
+Nampiangdin Boutique Hotel,"Hai Ya, Chiang Mai",8.8,Excellent,528,9.2,Lanna Deluxe Double Room,1 full bed,"   157,209"
+The Spirit Resort Hua Hin,Khao Tao,8.5,Very Good,8,10,Two-Bedroom Pool Villa,2 queen beds,"   406,817"
+Grand Fortune Hotel Nakhon Si Thammarat,Nakhon Si Thammarat,8.7,Excellent,135,9.1,Superior Twin Room,1 twin bed,"   142,329"
+Saming Chiang Dao Guest House,Chiang Dao,7.8,Good,131,8,Deluxe Double Room,1 twin bed,"   22,643"
+Norn Rimklong,Bangkok Noi,9.1,Wonderful,66,9.5,Superior King Room with City View,1 king bed,"   71,164"
+Koh Mak Ao Kao White Sand Beach,Ko Mak,8.5,Very Good,166,8.8,Villa with Garden View,1 king bed,"   165,943"
+Novotel Bangkok Bangna,Bangna,8,Very Good,337,8.5,Standard Queen Room,1 queen bed,"   101,340"
+Citadines Grand Central Sri Racha - SHA Extra Plus,Si Racha,8.8,Excellent,408,9.2,Studio Executive,1 queen bed,"   105,408"
+The Beach Resort & Residence - SHA Plus,Pathiu,8,Very Good,223,8.6,Studio,Multiple bed types,"   142,021"
+Baan Dara Resort,Sara Buri,7.5,Good,441,,Superior Bungalow,"2 beds (1 twin, 1 queen)","   51,109"
+Forgotten Hostel Silom,"Silom, Bang Rak",8.5,Very Good,66,8.9,Standard Twin Room,2 twin beds,"   82,460"
+Pullman Phuket Arcadia Karon Beach Resort,Karon Beach,8.4,Very Good,"1,286",8.9,Superior Twin Room with Garden View,2 twin beds,"   274,954"
+The Proud Exclusive Hotel-SHA Plus,Nakhon Pathom,7.7,Good,60,8.2,Superior,1 king bed,"   63,806"
+Maewin Guest House and Resort,Ban Huai Rin,9.3,Wonderful,31,8.9,Standard Double Room,1 full bed,"   90,573"
+Keeree Loft Resort,Thong Pha Phum,7.2,Good,128,,Standard Double or Twin Room,Multiple bed types,"   98,401"
+Maehaad Bay Resort - SHA Plus,Mae Haad,7.9,Good,410,8.5,Standard Double or Twin Room,   1 double or 2 twins,"   160,503"
+SK Resort Pattaya,Bang Lamung,8,Very Good,69,8.3,Standard Queen Room,1 king bed,"   41,340"
+Nuch's Apple Guest House,Si Bun Ruang,9.2,Wonderful,28,9.5,Double Room with Garden View,1 queen bed,"   40,758"
+Coriacea Beachfront Boutique Phuket Resort - SHA Plus,Mai Khao Beach,8.1,Very Good,406,8.4,Deluxe Twin Room,2 twin beds,"   121,445"
+Green Ville Laguna Hotel,Sung Noen,8.9,Excellent,74,9.2,Deluxe Twin Room,2 twin beds,"   139,159"
+Slive Hotel,Surin,8.8,Excellent,223,9.4,Deluxe Twin Room,2 twin beds,"   102,865"
+The Wisdom Residence,Bung Kan,7.8,Good,131,8.1,King Room with Balcony,1 king bed,"   42,052"
+Summit Windmill Golf Residence,Bangna,8.3,Very Good,661,8.8,Presidential Duplex Suite,"4 beds (2 twins, 2 queens)","   1,585,910"
+Coco Pina,Prachuap Khiri Khan,9.4,Wonderful,188,9.5,Two-Bedroom Suite,"3 beds (2 twins, 1 queen)","   196,436"
+Cross Vibe Chiang Mai Decem Nimman Hotel - formerly X2 Vibe Chiang Mai Decem - SHA Extra Plus,"Chang Phueak, Chiang Mai",8.4,Very Good,387,9,Deluxe Room,   1 double or 2 twins,"   79,518"
+Cross Vibe Chiang Mai Decem Nimman Hotel - formerly X2 Vibe Chiang Mai Decem - SHA Extra Plus,"Chang Phueak, Chiang Mai",8.4,Very Good,387,9,Deluxe Room,   1 double or 2 twins,"   79,518"
+Sugar Marina Resort -AVIATOR- Phuket Airport - SHA Extra Plus,Nai Yang Beach,7.7,Good,622,8.1,Deluxe Room (Exclude Airport Transfer),Multiple bed types,"   97,201"
+Sunsuri Phuket - SHA Plus,Nai Harn Beach,8.5,Very Good,352,8.8,Superior King or Twin Room,Multiple bed types,"   245,964"
+??????????????????,Yasothon,7.8,Good,10,8,Standard King Room,1 king bed,"   37,847"
+Mae Sot Commune,Mae Sot,9.9,Exceptional,312,9.8,Tent,2 twin beds,"   2,588"
+Thepchamrat Boutique Hotel,Uttaradit,8.1,Very Good,56,8.4,Queen Room with Balcony,1 king bed,"   37,847"
+Rancho Charnvee Resort & Country Club Khaoyai,Pak Chong,8.4,Very Good,197,8.7,One Bedroom Villa,1 queen bed,"   435,139"
+Phu Fahsai Homestay,Mon Jam,8.1,Very Good,308,8.5,Tent,1 queen bed,"   97,042"
+Chivapuri Beach Resort,"Klong Kloi Beach, Ko Chang",8.4,Very Good,137,8.9,Superior Double Room,1 king bed,"   241,220"
+Coco Bella Hotel,"Loh Dalum Bay, Phi Phi Islands",7.4,Good,"1,395",,Superior Double Room with Pool View,1 full bed,"   165,758"
+"Holiday Inn Express Bangkok Siam, an IHG Hotel - SHA Extra Plus","Pathumwan, Bangkok",7.8,Good,"1,472",8.3,Standard Double or Twin Room,1 full bed,"   185,087"
+Mida Resort Kanchanaburi - SHA PLUS,Sai Yok,8,Very Good,269,8.2,Tent River View,2 futon beds,"   110,462"
+P.L.P Guesthouse - Mae Hong Son,Mae Hong Son,7.8,Good,178,8,Standard Twin Room with Fan,2 twin beds,"   20,689"
+Star 3 Residence,Rayong,8.4,Very Good,235,8.7,Standard Double A,1 full bed,"   39,464"
+"Holiday Inn Resort Phuket, an IHG Hotel - SHA Extra Plus",Patong Beach,8.9,Excellent,"1,308",9.3,1 King Premium Villa Pool View Adults Only,1 king bed,"   539,928"
+Mövenpick Myth Hotel Patong Phuket,Patong Beach,8.8,Excellent,613,9.1,Classic King Room with Pool View,1 king bed,"   238,447"
+Mek Kiri Riverkwai Resort SHA,Thong Pha Phum,7,Good,61,,Superior Twin Room with Garden View,2 twin beds,"   89,293"
+Ibis Hua Hin,"Khao Takiab, Hua Hin",7.8,Good,"1,810",8.1,Standard Double Room,1 queen bed,"   90,262"
+Thai Smile serviced Appartments,Nong Prue,8,Very Good,152,,Deluxe Double or Twin Room with Balcony,"3 beds (2 twins, 1 full)","   24,473"
+Oakwood Hotel & Residence Bangkok SHA Plus Certified,"Sathorn, Bangkok",8.1,Very Good,782,8.5,Superior Double or Twin Room,   1 double or 2 twins,"   169,304"
+Sugar Marina Resort - NAUTICAL - Kata Beach - SHA plus,"Kata Noi Beach, Kata Beach",8.3,Very Good,273,8.5,Deluxe Double or Twin Room,Multiple bed types,"   151,622"
+Fortune Hotel Korat- SHA Plus,Nakhon Ratchasima,8,Very Good,633,8.2,Superior Double or Twin Room with City View,   1 double or 2 twins,"   79,113"
+Hop Inn Mukdahan,Mukdahan,8.2,Very Good,229,8.5,Standard Double Room,1 full bed,"   36,876"
+New Hut Bungalow,Lamai,8.3,Very Good,647,8.1,Bungalow with Garden View and  Fan and Shared Bathroom,2 twin beds,"   34,288"
+Lam-tong Resort,Don Sak,8.4,Very Good,92,8.2,Deluxe Double Room,1 queen bed,"   45,286"
+Kuiburi Hotel & Resort,Kui Buri,7.1,Good,57,,Villa with Garden View,1 queen bed,"   195,795"
+lyf Sukhumvit 8 Bangkok Managed by The Ascott Limited,"Khlong Toei, Bangkok",8.6,Excellent,402,9.1,One of a Kind,1 queen bed,"   125,442"
+Maikhao Palm Beach Resort - SHA Plus,Mai Khao Beach,7.5,Good,435,8.2,Deluxe Double or Twin Room with Sea View,1 full bed,"   269,131"
+"Valia Hotel Bangkok, Sukhumvit 24","Khlong Toei, Bangkok",8.5,Very Good,562,9.1,Deluxe - Tower 2,1 king bed,"   230,630"
+Green Terrace Resort,Chanthaburi,8.3,Very Good,92,8.8,Poolside Room,1 full bed,"   85,913"
+Papangkorn House,Suratthani,8.1,Very Good,587,8.5,Deluxe Double Room,1 full bed,"   43,669"
+Sheraton Hua Hin Pranburi Villas,"Pak Nam Pran, Pran Buri",8.5,Very Good,108,8.7,Villa with Private Pool,1 queen bed,"   553,554"
+Sunprime Kamala Beach - SHA Plus,Kamala Beach,8.6,Excellent,430,9,Grand Deluxe Pool View Room,   1 double or 2 twins,"   252,957"
+Phi Phi The Beach Resort- SHA Certified,"Long Beach, Phi Phi Islands",8.5,Very Good,"1,143",8.7,Superior Villa with Partial Sea View-Free Transfer to Tonsai Pier,1 full bed,"   340,203"
+I love phants Lodge,Ban Huai Thawai,8.8,Excellent,83,8.6,Twin Room with Garden View,2 twin beds,"   252,957"
+The ShellSea Krabi-SHA Extra Plus,Ao Nam Mao,8.6,Excellent,226,9.1,Shellsea Garden,   1 double or 2 twins,"   360,998"
+Lub d Koh Samui Chaweng Beach - SHA Extra Plus,"Chaweng City Center , Chaweng",8.6,Excellent,910,9.1,Deluxe King Room (City),1 queen bed,"   132,453"
+The Bed Hotel,Roi Et,8,Very Good,255,8.4,Standard King Room,1 king bed,"   42,052"
+ibis Styles Bangkok Sukhumvit Phra Khanong,"Khlong Toei, Bangkok",8.2,Very Good,"1,430",8.7,Standard Twin Room,2 twin beds,"   111,566"
+Jomtien Hostel,Jomtien Beach,7.9,Good,282,8.1,Standard Double Room,1 full bed,"   33,538"
+Baansuan Resort,Don Sak,7.8,Good,312,8.1,Deluxe Bungalow with Garden View,1 king bed,"   51,756"
+Pullman Khon Kaen Raja Orchid,Khon Kaen,8.2,Very Good,826,8.7,Superior Twin Room,"3 beds (2 twins, 1 futon)","   125,767"
+Aziss Boutique Hotel - SHA Plus,Phitsanulok,9,Wonderful,472,9.3,Deluxe King Room,1 king bed,"   46,249"
+Ibis Pattaya,Pattaya,7.8,Good,"1,364",8.2,Standard Twin Room,2 twin beds,"   68,016"
+Garrya Tongsai Bay Samui - SHA Extra Plus,Choeng Mon Beach,9.4,Wonderful,290,9.5,Beachfront Suites,1 queen bed,"   717,517"
+Ibis Bangkok Riverside,"Riverside, Bangkok",8,Very Good,"2,203",8.3,Twin Room,2 twin beds,"   102,899"
+Sea Seeker Krabi Resort - SHA Plus,Ao Nang Beach,8.7,Excellent,"1,123",8.9,Deluxe Double or Twin Room with Sea View,Multiple bed types,"   180,900"
+ibis Bangkok Sathorn,"Sathorn, Bangkok",8.2,Very Good,"1,205",8.5,Superior Queen Room,1 queen bed,"   72,699"
+Bkk39 Airport hotel,Ban Khlong Prawet,6.5,Review score,614,,Deluxe Double Room with Balcony,"2 beds (1 king, 1 sofa bed)","   51,176"
+Myplace@Surat Hotel,Suratthani,7.9,Good,439,8,Double Room with Fan,1 full bed,"   25,813"
+Songthai Suvarnabhumi,Ban Khlong Si,8.9,Excellent,66,9,Twin Room with Balcony,2 twin beds,"   89,926"
+Somerset Harbourview Sri Racha - SHA Extra Plus,Si Racha,9.2,Wonderful,508,9.5,Studio Apartment,1 king bed,"   120,202"
+Tup Kaek Sunset Beach Resort-SHA Plus,Tab Kaek Beach,8.3,Very Good,151,8.7,Deluxe Garden View,1 full bed,"   272,336"
+Lee Hotel,Suratthani,8.3,Very Good,372,8.6,One-Bedroom Suite,1 king bed,"   91,867"
+Seaview Resort Khao Lak - SHA Plus,"Nang Thong Beach, Khao Lak",8.3,Very Good,325,8.7,Deluxe Double or Twin Room with Garden View,Multiple bed types,"   159,427"
+Grand Mercure Phuket Patong,Patong Beach,8.5,Very Good,804,8.9,Superior Twin Room,2 twin beds,"   261,556"
+Blu Monkey Hub & Hotel Suratthani - SHA PLUS Certificate,Suratthani,8.4,Very Good,460,8.8,Standard King Room,1 king bed,"   75,750"
+Prana Resort Samui,Bangrak Beach,9.2,Wonderful,356,9.5,Cozy Deluxe Room,Multiple bed types,"   273,174"
+Guesthouse Phuket Airport,Ban Bo Han,7.2,Good,132,,Deluxe Double Room (2 Adults + 1 Child),1 king bed,"   55,389"
+"The Standard, Hua Hin",Hua Hin,8.7,Excellent,383,9.3,Standard King Room,1 king bed,"   451,260"
+Thanyachatra Boutique,Phetchaburi,7.9,Good,123,8.1,Deluxe Double Room with Balcony,1 queen bed,"   42,052"
+Unity Hotel,Si Sa Ket,8.4,Very Good,148,8.8,Double Room,1 full bed,"   51,756"
+VIC 3 Bangkok - SHA Plus,"Phaya Thai, Bangkok",8,Very Good,937,8.2,Flash Sales Studio Room Only,   1 double or 2 twins,"   109,877"
+"Holiday Inn Express Bangkok Soi Soonvijai, an IHG Hotel","Huai Khwang, Bangkok",7.7,Good,324,8.1,Standard Double Room,1 queen bed,"   130,717"
+Sea Valley Resort,Lipa Noi,8.6,Excellent,416,8.8,Villa with Private Pool and Sea View,1 queen bed,"   381,700"
+Pai Village Boutique Resort,Pai,9,Wonderful,883,9.2,Boutique Village,1 full bed,"   167,406"
+Kim Jek Cin 2 Hotel - ????????????????2,Mukdahan,7.6,Good,92,,Standard Double Room,1 king bed,"   23,843"
+Railay Bay Resort & Spa-SHA Extra Plus,Railay Beach,7.9,Good,"1,405",8.2,One Bedroom Luxury Pool Villa,"2 beds (1 sofa bed, 1 queen)","   1,122,920"
+SUNRAY Guesthouse ?????????????????????,Uthai Thani,7.1,Good,63,,Deluxe Double Room,1 full bed,"   67,606"
+The Joy Beach Villas,Hinkong,9.2,Wonderful,72,9.4,One-Bedroom Villa,"2 beds (1 full, 1 sofa bed)","   404,344"
+Centara Reserve Samui - SHA Plus,"Chaweng City Center , Chaweng",9.4,Wonderful,509,9.6,Reserve Pool Suite,1 full bed,"   1,314,063"
+SAii Phi Phi Island Village,"Loh Bagao Bay, Phi Phi Islands",8.5,Very Good,"1,393",8.9,Deluxe Premium Bungalow 1 King,1 king bed,"   543,711"
+JP Emerald Hotel,Yasothon,5.6,Review score,28,,Superior Twin Room,2 twin beds,"   53,296"
+Pugdee Hotel,Lang Suan,7.6,Good,94,,Standard Double Room,1 full bed,"   45,286"
+Dusit Thani Pattaya - SHA Extra Plus,North Pattaya,8.3,Very Good,"2,168",8.6,One Bedroom Suite Twin,2 twin beds,"   435,265"
+Pugdee Hotel,Lang Suan,7.6,Good,94,,Standard Double Room,1 full bed,"   45,286"
+Dusit Thani Pattaya - SHA Extra Plus,North Pattaya,8.3,Very Good,"2,168",8.6,One Bedroom Suite Twin,2 twin beds,"   435,265"
+Ramada Plaza by Wyndham Chao Fah Phuket,Phuket,8.1,Very Good,890,8.9,Deluxe Twin Room,2 twin beds,"   125,884"
+Avani Plus Mai Khao Phuket Suites,Mai Khao Beach,9,Wonderful,113,9.4,One Bedroom Suite,"2 beds (1 king, 1 sofa bed)","   515,793"
+Sand Sea Resort Railay Beach,Railay Beach,7.4,Good,"1,241",,Tropical Villa Double Bed (Sunrise Wing),"2 beds (1 king, 1 sofa bed)","   232,902"
+Chiangkham Grand Villa - SHA Certified,Chiang Kham,7.9,Good,54,8.2,Superior Double or Twin Room,Multiple bed types,"   64,048"
+Rajapruek Samui Resort - SHA Plus,Lipa Noi,7.1,Good,151,,Deluxe Double Room,1 king bed,"   108,882"
+"Hotel Indigo Bangkok Wireless Road, an IHG Hotel","Pathumwan, Bangkok",8.9,Excellent,"1,051",9.4,Standard Room,   1 double or 2 twins,"   308,628"
+Siam Boutique Hotel,Buriram,7.3,Good,222,,Standard Double Room,1 full bed,"   34,935"
+Pinky Bungalow Resort - SHA Extra Plus,"Klong Khong Beach, Ko Lanta",8.7,Excellent,403,9,Luxury Room,1 king bed,"   63,632"
+Crystal Resort Korat,Nakhon Ratchasima,8.1,Very Good,541,8.4,Presidential Suite,"3 beds (1 king, 2 sofa beds)","   49,492"
+"Nakara Hotel, Ubon Ratchathani",Ban Na Kham,8.7,Excellent,43,9,Deluxe Double Room,1 queen bed,"   60,351"
+The Sriracha Residence,Si Racha,8.2,Very Good,755,8.4,   Triple Room,"2 beds (1 twin, 1 king)","   79,852"
+Lanta Sand Resort & Spa,"Long Beach, Ko Lanta",8.4,Very Good,403,8.7,Beach Front Pool Access,1 queen bed,"   253,788"
+"Divalux Resort & Spa Bangkok, Suvarnabhumi Airport",Lat Krabang,7.4,Good,"2,006",8,Deluxe Twin Room,2 twin beds,"   103,502"
+Coco Palm Beach Resort - SHA Extra Plus,Mae Nam,8,Very Good,"1,014",8,Superior Bungalow,   1 double or 2 twins,"   142,329"
+"Phulay Bay, A Ritz-Carlton Reserve",Tab Kaek Beach,9.7,Exceptional,44,9.9,Reserve Pool Villa,2 king beds,"   2,427,065"
+"Chanalai Flora Resort, Kata Beach - SHA Plus",Kata Beach,8.5,Very Good,797,8.7,Superior Double or Twin Room,Multiple bed types,"   180,038"
+Cape Dara Resort - SHA Plus,North Pattaya,8.6,Excellent,655,8.9,Top Star Duplex Suite with Club Benefits,2 king beds,"   1,909,796"
+Niwas Ayutthaya,Phra Nakhon Si Ayutthaya,8.1,Very Good,716,8,Superior Double Room,1 queen bed,"   73,752"
+Sindhorn Kempinski Hotel Bangkok - SHA Extra Plus,"Pathumwan, Bangkok",9.4,Wonderful,403,9.6,Executive Club Twin Room,2 twin beds,"   1,267,650"
+The Living Hotel SamutPrakan,Bang Bo,8.2,Very Good,52,8.3,Deluxe Double Room with Balcony,1 king bed,"   52,209"
+Sunwing Kamala Beach - SHA Plus,Kamala Beach,8.8,Excellent,171,9.3,Studio with Pool View,   1 double or 2 twins,"   296,756"
+Salad Buri Resort- SHA Extra Plus,Salad Beach,7.6,Good,315,8,Premier Double Room,1 queen bed,"   127,354"
+The Pride Hotel Phitsanulok,Ban Ko,8.9,Excellent,60,9.2,Superior Twin Room,2 twin beds,"   116,451"
+Chantaramas Resort,Baan Khai,8.1,Very Good,266,8.5,Deluxe Double Room,1 king bed,"   169,131"
+Salad Beach Resort - SHA Extra Plus,Salad Beach,7.8,Good,394,8.1,Standard Double Room,1 queen bed,"   89,556"
+Hyatt Regency Koh Samui- SHA Extra Plus,Chaweng,9.1,Wonderful,700,9.4,1 Bedroom Regency Suite,1 king bed,"   746,202"
+Patravana Resort,Phayayen,7.8,Good,240,8,Vana Country View Suite,Multiple bed types,"   121,233"
+dusitD2 Chiang Mai - SHA Extra Plus,"Chang Moi, Chiang Mai",8.5,Very Good,362,8.8,Club Deluxe King,1 king bed,"   228,459"
+Four Seasons Resort Chiang Mai -SHA Plus,Mae Rim,9.4,Wonderful,127,9.6,One Bedroom Residence,"3 beds (2 twins, 1 king)","   4,804,680"
+ibis Styles Bangkok Silom,"Bang Rak, Bangkok",8.6,Excellent,"1,042",9.1,Standard Twin Room,2 twin beds,"   125,551"
+SKYVIEW Resort Phuket Patong Beach - SHA Extra Plus,Patong Beach,8.9,Excellent,669,9.4,Garden Studio,   1 double or 2 twins,"   238,380"
+Cholchan Pattaya Beach Resort - SHA Extra Plus,Na Kluea,7.2,Good,411,,Superior Double or Twin Room with Garden View,   1 double or 2 twins,"   328,774"
+ibis Styles Bangkok Ratchada,"Huai Khwang, Bangkok",8.3,Very Good,534,8.6,Standard Queen Room,1 full bed,"   131,916"
+Dara Samui Beach Resort Adult Only - SHA Extra Plus,"Chaweng City Center , Chaweng",8,Very Good,393,8.5,Superior Double or Twin Room - Room Only,Multiple bed types,"   228,896"
+Sasitara Thai Villas,Choeng Mon Beach,8.5,Very Good,440,8.5,Family Villa,"2 beds (1 twin, 1 full)","   206,506"
+"Bandara Resort and Spa, Samui","Fisherman Village, Bophut",8.4,Very Good,275,8.7,Deluxe Double or Twin Room with Balcony,Multiple bed types,"   265,050"
+The Royal Bamboo Lodges - SHA Certified,Khao Sok National Park,8.4,Very Good,297,8.5,Double Room with Garden View,Multiple bed types,"   64,048"
+Cassia Phuket - SHA Extra Plus,"Laguna Phuket, Bang Tao Beach",8.3,Very Good,492,8.7,One-Bedroom Suite,1 queen bed,"   318,142"
+7 Days Premium Hotel Don Meaung Airport,Ban Don Muang,8.2,Very Good,252,8.6,Superior Twin Room,2 twin beds,"   76,694"
+The Midst@ Royal hills Nakornayok,Nakhon Nayok,8.6,Excellent,74,9,Two-Bedroom House,"4 beds (2 twins, 1 king, 1 sofa bed)","   333,075"
+Dusit Thani Laguna Phuket - SHA Extra Plus,"Laguna Phuket, Bang Tao Beach",8.4,Very Good,884,8.6,Deluxe Double or Twin Room with Ocean View,1 king bed,"   423,038"
+"InterContinental Koh Samui Resort, an IHG Hotel - SHA Extra Plus",Taling Ngam Beach,8.9,Excellent,129,9.4,Two-Bedroom Family Villa,"3 beds (2 twins, 1 king)","   1,317,972"
+Grand Mercure Khao Lak Bangsak,"Bangsak Beach, Khao Lak",9,Wonderful,544,9.4,Deluxe Twin Room,2 twin beds,"   148,346"
+Bandahara,Satun,8.1,Very Good,60,8.1,Apartment with Balcony,1 full bed,"   52,403"
+"Supalai Scenic Bay Resort And Spa, SHA Extra Plus",Por Bay,7.6,Good,337,8.4,Super Deluxe Double room with Sea view,1 king bed,"   121,294"
+Sofitel Krabi Phokeethra Golf and Spa Resort,Klong Muang Beach,8.4,Very Good,174,9.2,Superior Room with King Bed and Balcony,1 king bed,"   308,195"
+Serenity Hotel and Spa Kabinburi,Kabin Buri,8.7,Excellent,108,8.9,Executive Pool View include Onsen,1 king bed,"   226,432"
+MEET Boutique Resort,Suratthani,8.2,Very Good,339,8.6,Deluxe King Room,1 king bed,"   115,804"
+Mövenpick Siam Hotel Na Jomtien Pattaya,Na Jomtien,8.2,Very Good,457,8.5,Deluxe Twin Room with Sea View,2 twin beds,"   304,867"
+The Orchid Resort & Relax,Maha Sarakham,7.8,Good,68,8,Deluxe Bungalow with Garden View,1 king bed,"   54,991"
+Rabbit Hotel Phimai,Phimai,7.7,Good,84,8.1,Superior Double Room,1 king bed,"   66,838"
+Phanomrungpuri Hotel Buriram,Nang Rong,8.5,Very Good,168,8.8,Superior King Room,1 king bed,"   77,569"
+"Holiday Inn Express Pattaya Central, an IHG Hotel - SHA Extra Plus",Pattaya,8.5,Very Good,"1,269",9.1,Standard Queen Room - Non-Smoking,1 queen bed,"   92,025"
+Carlton Hotel Bangkok Sukhumvit - SHA Extra Plus,"Wattana, Bangkok",9.3,Wonderful,"1,432",9.7,Executive Room,Multiple bed types,"   478,958"
+ibis Styles Krabi Ao Nang,Ao Nang Beach,8.3,Very Good,512,8.5,Standard Twin Room,2 twin beds,"   79,048"
+"Kimpton Kitalay Samui, an IHG Hotel",Choeng Mon Beach,9.3,Wonderful,201,9.7,Standard Double Room,1 king bed,"   631,289"
+Dream riverside,Ban Rai,8.6,Excellent,39,9.2,Quadruple Room with Mountain View,4 bunk beds,"   74,399"
+Noku Phuket,Chalong,9.1,Wonderful,214,9.5,Loft Studio with Twin Bed,2 twin beds,"   552,883"
+De Chai Colonial Hotel & Spa - SHA Plus,"Chang Moi, Chiang Mai",8.7,Excellent,370,9.1,Grand Deluxe Double or Twin Room (Room Only),   1 double or 2 twins,"   171,925"
+Dinso Resort & Villas Phuket an IHG Hotel,"Nanai Road, Patong Beach",8.8,Excellent,316,9.1,Premium Room,,"   264,387"
+Supachai Inn,Ban Ba Ngan,7.9,Good,217,8.2,Premium Quadruple Room,2 king beds,"   54,344"
+Hua Hin Marriott Resort and Spa,Hua Hin,8.8,Excellent,621,9.3,"Superior, Guest room, 2 Double, Resort view",2 queen beds,"   391,847"
+The Sea Koh Samui Resort and Residences by Tolani - SHA Extra Plus,Koh Samui,7.9,Good,208,8.4,Deluxe Suite Sea View,1 king bed,"   336,710"
+Hotel Thomas Bangkok,Makkasan,8.4,Very Good,194,8.8,Suite with Terrace,"2 beds (1 sofa bed, 1 queen)","   542,206"
+Wyndham Hua Hin Pranburi Resort & Villas,"Pak Nam Pran, Ban Pak Nam Pran",9,Wonderful,119,9.2,Garden Twin Room,2 twin beds,"   216,035"
+Sugar Marina Resort-SURF-Kata Beach - SHA Plus,Kata Beach,7.9,Good,199,8,Deluxe Double or Twin Room,Multiple bed types,"   132,851"
+Hop Inn Mae Sot,Mae Sot,8.4,Very Good,346,8.6,Standard  Double Room,1 full bed,"   40,111"
+Pullman Phuket Panwa Beach Resort,Panwa Beach,8.1,Very Good,430,8.6,Deluxe King Room,1 king bed,"   252,896"
+Bangrak Pier Bungalow,Bangrak Beach,8.9,Excellent,255,9.1,Bungalow with Garden View,1 king bed,"   118,530"
+Baan Tonjaeng Resort,Chai Nat,9,Wonderful,48,9.2,Deluxe Double Room,1 king bed,"   61,460"
+ibis Bangkok Sukhumvit 24,"Khlong Toei, Bangkok",8.2,Very Good,"1,305",8.6,Standard Queen Room,1 queen bed,"   112,277"
+Lada Krabi Residence Hotel - SHA Plus,Krabi,8.2,Very Good,575,8.5,Superior Double Room,1 full bed,"   64,339"
+Pimalai Resort & Spa - SHA Extra Plus,"Kan Tiang Beach, Ko Lanta",9.6,Exceptional,397,9.7,Deluxe Room - Free Krabi Airport Transfer,1 queen bed,"   827,816"
+ibis Bangkok Sukhumvit 24,"Khlong Toei, Bangkok",8.2,Very Good,"1,305",8.6,Standard Queen Room,1 queen bed,"   112,277"
+Lada Krabi Residence Hotel - SHA Plus,Krabi,8.2,Very Good,575,8.5,Superior Double Room,1 full bed,"   64,339"
+Pimalai Resort & Spa - SHA Extra Plus,"Kan Tiang Beach, Ko Lanta",9.6,Exceptional,397,9.7,Deluxe Room - Free Krabi Airport Transfer,1 queen bed,"   827,816"
+Shangrilah Bungalow,Mae Nam,8.5,Very Good,517,8.5,Standard Double Room,1 full bed,"   93,161"
+Hotel Zing,Pattaya South,8.1,Very Good,938,8.4,Superior Double Room South Wing,1 full bed,"   61,647"
+The deer resort,Chiang Mai,7.8,Good,285,8.4,Twin Room with Bath,2 twin beds,"   101,796"
+Cross Pattaya Pratamnak - SHA Plus,Pattaya South,8.9,Excellent,116,9.4,Cross - Elite Suite,1 king bed,"   433,476"
+Novotel Bangkok Sukhumvit 4,"Khlong Toei, Bangkok",8.4,Very Good,"1,669",9,Deluxe Twin Room,2 twin beds,"   175,964"
 ,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,
