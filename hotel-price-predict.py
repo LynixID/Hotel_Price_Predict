@@ -48,33 +48,33 @@ def beranda():
         st.markdown(""" 
         ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
         
-        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti :
-        - 📍 Lokasi Hotel
-        - 🛏️ Jenis Kamar
-        - 🛋️ Tipe Tempat Tidur
+        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti:
+        - 📍 **Lokasi Hotel**
+        - 🛏️ **Jenis Kamar**
+        - 🛋️ **Tipe Tempat Tidur**
         """)
         
-        st.image("hotel.jpg", caption= "Newstar Hotel", use_container_width=True)
+        st.image("hotel.jpg", caption="Newstar Hotel", use_container_width=True)
         
         st.info(""" 
         ### 🎯 Fitur Utama
-        1. **Dataset** : Melihat dan mengeksplorasi data hotel yang tersedia
-        2. **Visualisasi** : Analisis visual data harga hotel
-        3. **Prediksi** : Prediksi harga berdasarkan preferensi Anda
+        1. **Dataset**: Melihat dan mengeksplorasi data hotel yang tersedia
+        2. **Visualisasi**: Analisis visual data harga hotel
+        3. **Prediksi**: Prediksi harga berdasarkan preferensi Anda
         """)
         
         st.markdown(""" 
         ### 🎯 Tujuan dan Manfaat
         
-        **Tujuan Pengembangan :**
+        **Tujuan Pengembangan:**
         1. Memberikan estimasi harga hotel yang akurat untuk membantu perencanaan anggaran
         2. Menyediakan insight tentang faktor-faktor yang mempengaruhi harga hotel
         3. Memudahkan perbandingan harga berdasarkan berbagai kriteria
         
-        **Manfaat bagi Pengguna :**
-        1. Perencanaan Anggaran yang Lebih Baik
-        2. Pengambilan Keputusan yang Lebih Informed
-        3. Pemahaman Mendalam tentang Tren Harga Hotel
+        **Manfaat bagi Pengguna:**
+        1. Perencanaan anggaran yang lebih baik
+        2. Pengambilan keputusan yang lebih informed
+        3. Pemahaman mendalam tentang tren harga hotel
         """)
         
         st.markdown(""" 
