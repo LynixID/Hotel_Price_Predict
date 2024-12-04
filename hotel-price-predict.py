@@ -153,6 +153,12 @@ def visualisasi():
     
     with tab1:
         st.markdown("### Distribusi Harga Kamar Hotel")
+        st.markdown("""
+        **Penjelasan:**
+        - Grafik ini menunjukkan distribusi harga kamar hotel.
+        - Digunakan untuk memahami sebaran harga, apakah data memiliki kecenderungan harga rendah, sedang, atau tinggi.
+        - Membantu pengguna mengenali pola umum harga kamar hotel.
+        """)
         fig1, ax1 = plt.subplots(figsize=(10, 6))
         sns.histplot(dataset["Room Price"], kde=True, ax=ax1)
         ax1.set_title("Distribusi Harga Kamar")
@@ -160,6 +166,12 @@ def visualisasi():
         
     with tab2:
         st.markdown("### Perbandingan Harga Berdasarkan Lokasi")
+        st.markdown("""
+        **Penjelasan:**
+        - Boxplot ini membandingkan harga kamar berdasarkan lokasi hotel.
+        - Memungkinkan pengguna memahami lokasi dengan harga rata-rata lebih tinggi atau rendah.
+        - Membantu dalam memilih lokasi yang sesuai dengan anggaran.
+        """)
         fig2, ax2 = plt.subplots(figsize=(12, 6))
         sns.boxplot(data=dataset, x="Location", y="Room Price", ax=ax2)
         plt.xticks(rotation=45)
@@ -168,6 +180,13 @@ def visualisasi():
     
     with tab3:
         st.markdown("### Analisis Harga Berdasarkan Tipe Kamar dan Tempat Tidur")
+        st.markdown("""
+        **Penjelasan:**
+        - Dua grafik ini menganalisis rata-rata harga kamar berdasarkan jenis kamar dan tipe tempat tidur.
+        - **Grafik kiri**: Menampilkan rata-rata harga per jenis kamar (contoh: Suite, Deluxe).
+        - **Grafik kanan**: Menampilkan rata-rata harga per tipe tempat tidur (contoh: Single, Double).
+        - Berguna untuk memilih kombinasi kamar dan tempat tidur yang sesuai dengan preferensi dan anggaran.
+        """)
         
         col1, col2 = st.columns(2)
         
@@ -201,6 +220,12 @@ def visualisasi():
     
     with tab4:
         st.markdown("### ⭐ Line Chart Rating Hotel")
+        st.markdown("""
+        **Penjelasan:**
+        - Line chart ini menampilkan rating setiap hotel berdasarkan nama hotel.
+        - Memungkinkan pengguna membandingkan tingkat kepuasan pelanggan antarhotel.
+        - Berguna untuk memilih hotel dengan rating tertinggi di lokasi tertentu.
+        """)
         if "Rating" in dataset.columns:  # Pastikan kolom Rating ada
             sorted_dataset = dataset.sort_values(by="Hotel Name")  # Urutkan berdasarkan nama hotel
             fig5, ax5 = plt.subplots(figsize=(12, 6))
@@ -324,6 +349,23 @@ def prediksi():
             - Harga sebenarnya kemungkinan besar berada dalam rentang ini
             - Range ini memberikan gambaran tentang fluktuasi harga yang mungkin terjadi
             """)
+
+
+def set_background_image(image_url):
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("{image_url}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Router halaman
 if selected == "Beranda":
