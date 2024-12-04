@@ -104,20 +104,58 @@ def beranda():
         4. Perhatikan tingkat akurasi prediksi
         """)
 
-# Fungsi untuk halaman metode
 def metode():
-    st.title("⚙️ Metode Prediksi")
+    st.title("⚙️ Metode Prediksi Harga Hotel")
     st.markdown("---")
-    
-    st.markdown("""
-    ### 🤖 Teknologi Machine Learning yang Digunakan
-    
-    Aplikasi ini menggunakan algoritma **Random Forest Regressor**, sebuah model machine learning yang handal untuk prediksi harga hotel. Berikut adalah alasan utama pemilihan metode ini:
-    
-    1. **Akurasi Tinggi**: Random Forest menggunakan kombinasi dari banyak decision trees sehingga memberikan hasil yang lebih stabil dan akurat.
-    2. **Fleksibilitas**: Model ini dapat menangani berbagai jenis data baik kategorikal maupun numerik.
-    3. **Ketahanan terhadap Overfitting**: Random Forest cenderung lebih tahan terhadap overfitting dibandingkan dengan metode lainnya.
-    4. **Feature Importance**: Algoritma ini mampu memberikan wawasan tentang fitur mana yang paling memengaruhi prediksi harga hotel.
+
+    # Membuat dua kolom
+    col1, col2 = st.columns(2)
+
+    # Kolom kiri: Teknologi yang digunakan
+    with col1:
+        st.markdown("## 🧠 Teknologi yang Digunakan")
+        st.write("""
+        Aplikasi ini menggunakan **Random Forest Regressor**, 
+        sebuah algoritma machine learning yang dirancang untuk memprediksi nilai kontinu seperti harga kamar hotel.
+        """)
+        st.markdown("### ✨ Keunggulan Random Forest Regressor:")
+        st.write("""
+        - **Akurasi Tinggi**: Memberikan prediksi yang lebih presisi dibandingkan model lainnya.
+        - **Fleksibilitas**: Mampu bekerja dengan berbagai tipe data (numerik dan kategorikal).
+        - **Tahan terhadap Overfitting**: Menggunakan pendekatan ensemble untuk hasil yang lebih stabil.
+        - **Kemampuan Interpretasi**: Menyoroti fitur yang paling memengaruhi harga.
+        """)
+
+    # Kolom kanan: Mengapa metode ini dipilih
+    with col2:
+        st.markdown("## 🔍 Mengapa Metode Ini?")
+        st.write("""
+        **Random Forest Regressor** dipilih karena sifatnya yang unggul dalam:
+        """)
+        st.markdown("### 🏆 Keunggulan Utama:")
+        st.write("""
+        - **Mengatasi Kompleksitas Data**: Cocok untuk pola non-linear dalam data.
+        - **Menangani Missing Values**: Mampu bekerja tanpa penghapusan data kosong.
+        - **Skalabilitas Tinggi**: Efektif pada dataset besar tanpa mengurangi performa.
+        - **Insightful**: Mengidentifikasi faktor utama yang memengaruhi harga.
+        """)
+
+    # Menambahkan catatan tambahan di bagian bawah
+    st.info("### 🎯 Manfaat Penggunaan Model")
+    st.info("""
+    1. **Prediksi Harga Akurat**: Mempermudah estimasi harga kamar hotel.
+    2. **Pemahaman tentang Tren Harga**: Menjelaskan faktor utama penentu harga.
+    3. **Keputusan Cerdas**: Membantu memilih lokasi dan tipe kamar sesuai anggaran.
+    """)
+
+    # Menambahkan garis pemisah
+    st.markdown("---")
+
+    # Kesimpulan akhir
+    st.markdown("### ✍️ Kesimpulan")
+    st.write("""
+    Dengan menggunakan Random Forest Regressor, aplikasi ini memberikan prediksi harga hotel yang andal
+    serta wawasan berharga untuk membantu pengguna membuat keputusan terbaik.
     """)
 
 # Fungsi untuk halaman dataset
@@ -138,16 +176,32 @@ def dataset_view():
         st.write("Harga Rata-rata:", f"Rp {dataset['Room Price'].mean():,.2f}")
 
     st.markdown("---")
-    st.markdown("### 📚 Dataset dan Sumber Data")
+    st.info("### 📚 **Penjelasan Data yang Ditampilkan**")
     st.markdown("""
-    Dataset yang digunakan berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k). 
-    
-    **Mengapa memilih dataset ini?**
-    - Kualitas Data: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap.
-    - Keragaman: Mencakup berbagai lokasi, tipe kamar, dan fasilitas.
-    - Update Teratur: Dataset diperbarui secara berkala.
-    - Relevansi: Mencerminkan kondisi pasar hotel yang sebenarnya.
+    <div style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px;">
+    Mengapa hanya menampilkan sebagian data?  
+    <ul>
+        <li><strong>⚡ Performa Lebih Cepat</strong>: Menampilkan seluruh data (5,000 baris) dapat memperlambat aplikasi.</li>
+        <li><strong>🎨 Tampilan Lebih Rapi</strong>: Data terbatas membuat tabel lebih mudah dibaca.</li>
+        <li><strong>📊 Analisis Tetap Akurat</strong>: Analisis tetap menggunakan data lengkap.</li>
+    </ul>
+    <strong>Bagaimana jika ingin melihat data lengkap?</strong>  
+    Anda dapat mengunduh dataset asli dari Kaggle atau menggunakan alat analisis tambahan.
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("---")
+    st.info("### 📄 **Dataset dan Sumber Data**")
+    st.markdown("""
+    Dataset ini berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k).  
+    Berikut alasan memilih dataset ini:  
+    - ✅ **Kualitas Data**: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap.
+    - 🌍 **Keragaman**: Mencakup lokasi, tipe kamar, dan fasilitas.
+    - 🔄 **Update Teratur**: Dataset diperbarui secara berkala.
+    - 📊 **Relevansi**: Mencerminkan kondisi pasar hotel sebenarnya.
     """)
+
+    st.markdown("---")
 
 # Fungsi untuk halaman visualisasi
 def visualisasi():
