@@ -21,7 +21,7 @@ def muat_data():
 dataset = muat_data()
 
 # Konfigurasi sidebar
-st.sidebar.image("image.jpg", width=200)  # Width tetap bisa digunakan untuk sidebar
+st.sidebar.image("image.jpg", width=200)
 st.sidebar.title("🏨 Menu Navigasi")
 st.sidebar.markdown("---")
 
@@ -34,11 +34,11 @@ selected = st.sidebar.selectbox(
 # Informasi di sidebar
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📱 Informasi Aplikasi")
-st.sidebar.info("Aplikasi ini menggunakan machine learning untuk memprediksi harga kamar hotel.")
+st.sidebar.info("Aplikasi ini menggunakan machine learning dengan algoritma Random Forest Regressor untuk memprediksi harga kamar hotel.")
 st.sidebar.markdown("### 📊 Statistik Data")
 st.sidebar.metric("Total Data", f"{len(dataset):,} baris")
 
-# Fungsi untuk halaman berandaS
+# Fungsi untuk halaman beranda
 def beranda():
     st.title("🏢 Aplikasi Prediksi Harga Hotel")
     st.markdown("---")
@@ -48,7 +48,7 @@ def beranda():
         st.markdown("""
         ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
         
-        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan:
+        Aplikasi ini membantu memperkirakan harga kamar hotel berdasarkan beberapa faktor penting seperti:
         - 📍 Lokasi Hotel
         - 🛏️ Jenis Kamar
         - 🛋️ Tipe Tempat Tidur
@@ -56,13 +56,76 @@ def beranda():
         
         st.info("""
         ### 🎯 Fitur Utama:
-        1. **Dataset**: Melihat data hotel yang tersedia
+        1. **Dataset**: Melihat dan mengeksplorasi data hotel yang tersedia
         2. **Visualisasi**: Analisis visual data harga hotel
-        3. **Prediksi**: Prediksi harga berdasarkan preferensi
+        3. **Prediksi**: Prediksi harga berdasarkan preferensi Anda
         """)
+
+        st.markdown("""
+        ### 🤖 Teknologi Machine Learning yang Digunakan
+        
+        Aplikasi ini menggunakan algoritma **Random Forest Regressor**, sebuah model machine learning yang handal untuk prediksi harga. Beberapa keunggulan penggunaan Random Forest dalam aplikasi ini:
+        
+        1. **Akurasi Tinggi**: Mengkombinasikan multiple decision trees untuk hasil prediksi yang lebih akurat
+        2. **Penanganan Data Kompleks**: Mampu menangani berbagai jenis variabel (lokasi, tipe kamar, dll.)
+        3. **Ketahanan terhadap Outlier**: Tidak sensitif terhadap data ekstrem
+        4. **Interpretasi Mudah**: Memberikan tingkat kepentingan fitur yang mudah dipahami
+        """)
+
+        st.markdown("""
+        ### 📊 Dataset dan Sumber Data
+        
+        Dataset yang digunakan berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k). 
+        
+        **Mengapa memilih dataset ini?**
+        - Kualitas Data: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap
+        - Keragaman: Mencakup berbagai lokasi, tipe kamar, dan fasilitas
+        - Update Teratur: Dataset diperbarui secara berkala
+        - Relevansi: Mencerminkan kondisi pasar hotel yang sebenarnya
+        """)
+
+        st.markdown("""
+        ### 🎯 Tujuan dan Manfaat
+        
+        **Tujuan Pengembangan:**
+        1. Memberikan estimasi harga hotel yang akurat untuk membantu perencanaan anggaran
+        2. Menyediakan insight tentang faktor-faktor yang mempengaruhi harga hotel
+        3. Memudahkan perbandingan harga berdasarkan berbagai kriteria
+        
+        **Manfaat bagi Pengguna:**
+        1. Perencanaan Anggaran yang Lebih Baik
+        2. Pengambilan Keputusan yang Lebih Informed
+        3. Pemahaman Mendalam tentang Tren Harga Hotel
+        """)
+
+        st.markdown("""
+        ### 🚀 Cara Menggunakan Website
+        
+        1. **Eksplorasi Dataset**
+           - Kunjungi tab "Dataset" untuk melihat data mentah
+           - Pelajari berbagai variabel yang tersedia
+        
+        2. **Analisis Visual**
+           - Buka tab "Visualisasi" untuk melihat tren dan pola
+           - Eksplorasi grafik interaktif untuk pemahaman lebih dalam
+        
+        3. **Prediksi Harga**
+           - Pilih tab "Prediksi"
+           - Masukkan preferensi Anda (lokasi, tipe kamar, dll.)
+           - Dapatkan estimasi harga beserta tingkat akurasinya
+        """)
+
     with col2:
-        with col2:
-            st.image("image.jpg", caption="Prediksi Harga Hotel", use_container_width=True)
+        st.image("image.jpg", caption="Prediksi Harga Hotel", use_container_width=True)
+        
+        st.markdown("""
+        ### 💡 Tips Penggunaan
+        
+        1. Mulai dengan mempelajari dataset untuk pemahaman awal
+        2. Gunakan visualisasi untuk melihat tren harga
+        3. Coba berbagai kombinasi di fitur prediksi
+        4. Perhatikan tingkat akurasi prediksi
+        """)
 
 # Fungsi untuk halaman dataset
 def dataset_view():
@@ -175,35 +238,92 @@ def prediksi():
         jenis_kamar = st.selectbox("🛏️ Jenis Kamar", dataset["Room Type"].unique())
         jenis_tempat_tidur = st.selectbox("🛋️ Jenis Tempat Tidur", dataset["Bed Type"].unique())
         
+        st.markdown("""
+        ### 💡 Tips Penggunaan Hasil Prediksi:
+        1. Gunakan range prediksi sebagai patokan dalam merencanakan anggaran
+        2. Perhatikan nilai MAE untuk memahami tingkat ketidakpastian prediksi
+        3. Nilai R² dapat membantu Anda menilai keandalan prediksi
+        4. Lakukan beberapa kali prediksi dengan kombinasi berbeda untuk perbandingan
+        """)
+        
+        # Tambahkan tombol untuk melakukan prediksi
+        predict_button = st.button("Prediksi Harga")
+        
     with col2:
         st.markdown("### Hasil Prediksi")
         
-        X = dataset[["Location", "Room Type", "Bed Type"]]
-        X = pd.get_dummies(X, drop_first=True)
-        y = dataset["Room Price"]
-        
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        model = RandomForestRegressor(random_state=42)
-        model.fit(X_train, y_train)
-        
-        data_input = pd.DataFrame([[lokasi, jenis_kamar, jenis_tempat_tidur]], 
-                                 columns=["Location", "Room Type", "Bed Type"])
-        data_input = pd.get_dummies(data_input)
-        data_input = data_input.reindex(columns=X.columns, fill_value=0)
-        hasil_prediksi = model.predict(data_input)
-        
-        st.metric("💰 Prediksi Harga", f"Rp {hasil_prediksi[0]:,.2f}")
-        
-        y_pred = model.predict(X_test)
-        mae = mean_absolute_error(y_test, y_pred)
-        st.metric("📉 Tingkat Akurasi Prediksi", f"±Rp {mae:,.2f}")
-        
-        st.info("""
-        💡 Informasi Tingkat Akurasi:
-        - Angka ini menunjukkan rata-rata selisih antara harga prediksi dengan harga sebenarnya
-        - Contoh: Jika tingkat akurasi ±Rp 100.000, prediksi harga bisa lebih tinggi atau lebih rendah sekitar Rp 100.000
-        - Semakin kecil nilai ini, semakin akurat prediksi yang dihasilkan
-        """)
+        if predict_button:
+            # [Kode prediksi yang sama...]
+            X = dataset[["Location", "Room Type", "Bed Type"]]
+            y = dataset["Room Price"]
+            
+            X_encoded = pd.get_dummies(X)
+            
+            X_train, X_test, y_train, y_test = train_test_split(
+                X_encoded, 
+                y, 
+                test_size=0.2, 
+                random_state=None
+            )
+            
+            model = RandomForestRegressor(
+                n_estimators=100,
+                max_depth=None,
+                min_samples_split=2,
+                min_samples_leaf=1,
+                random_state=None
+            )
+            model.fit(X_train, y_train)
+            
+            data_input = pd.DataFrame([[lokasi, jenis_kamar, jenis_tempat_tidur]], 
+                                    columns=["Location", "Room Type", "Bed Type"])
+            data_input_encoded = pd.get_dummies(data_input)
+            
+            missing_cols = set(X_encoded.columns) - set(data_input_encoded.columns)
+            for col in missing_cols:
+                data_input_encoded[col] = 0
+            data_input_encoded = data_input_encoded[X_encoded.columns]
+            
+            hasil_prediksi = model.predict(data_input_encoded)
+            
+            y_pred = model.predict(X_test)
+            mae = mean_absolute_error(y_test, y_pred)
+            r2_score = model.score(X_test, y_test)
+            
+            st.metric("💰 Prediksi Harga", f"Rp {hasil_prediksi[0]:,.2f}")
+            st.metric("📉 Mean Absolute Error", f"±Rp {mae:,.2f}")
+            st.metric("📊 R² Score", f"{r2_score:.4f}")
+            
+            lower_bound = hasil_prediksi[0] - mae
+            upper_bound = hasil_prediksi[0] + mae
+            st.info(f"Range Prediksi: Rp {lower_bound:,.2f} - Rp {upper_bound:,.2f}")
+            
+            st.markdown("""
+            ### 📋 Penjelasan Detail Hasil Prediksi:
+            
+            #### 1. 💰 Prediksi Harga
+            - Ini adalah estimasi harga kamar hotel berdasarkan pilihan Anda
+            - Harga ini merupakan hasil analisis dari pola data historis
+            - Prediksi ini mempertimbangkan lokasi, jenis kamar, dan tipe tempat tidur yang Anda pilih
+            
+            #### 2. 📉 Mean Absolute Error (MAE)
+            - MAE menunjukkan rata-rata selisih antara prediksi dengan harga sebenarnya
+            - Semakin kecil nilai MAE, semakin akurat prediksi
+            - Contoh: Jika MAE Rp 100.000, artinya prediksi bisa meleset ±Rp 100.000 dari harga sebenarnya
+            
+            #### 3. 📊 R² Score (Coefficient of Determination)
+            - Nilai antara 0 hingga 1 yang menunjukkan seberapa baik model memprediksi
+            - Semakin mendekati 1, semakin akurat model
+            - Contoh interpretasi:
+              - R² = 0.8 berarti model menjelaskan 80% variasi harga
+              - R² = 0.5 berarti model menjelaskan 50% variasi harga
+              - R² < 0.3 menunjukkan prediksi kurang akurat
+            
+            #### 4. 📍 Range Prediksi
+            - Rentang harga yang mungkin berdasarkan MAE
+            - Harga sebenarnya kemungkinan besar berada dalam rentang ini
+            - Range ini memberikan gambaran tentang fluktuasi harga yang mungkin terjadi
+            """)
 
 # Router halaman
 if selected == "Beranda":
