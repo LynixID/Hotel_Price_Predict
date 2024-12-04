@@ -28,7 +28,7 @@ st.sidebar.markdown("---")
 # Menu sidebar
 selected = st.sidebar.selectbox(
     "Pilih Menu",
-    ["Beranda", "Dataset", "Visualisasi", "Prediksi"],
+    ["Beranda", "Metode", "Dataset", "Visualisasi", "Prediksi"],
 )
 
 # Informasi di sidebar
@@ -43,7 +43,7 @@ def beranda():
     st.title("🏢 Aplikasi Prediksi Harga Hotel")
     st.markdown("---")
     
-    col1, col2 = st.columns([2,1])
+    col1, col2 = st.columns([2, 1])
     with col1:
         st.markdown("""
         ### Selamat Datang di Aplikasi Prediksi Harga Hotel!
@@ -62,29 +62,6 @@ def beranda():
         """)
 
         st.markdown("""
-        ### 🤖 Teknologi Machine Learning yang Digunakan
-        
-        Aplikasi ini menggunakan algoritma **Random Forest Regressor**, sebuah model machine learning yang handal untuk prediksi harga. Beberapa keunggulan penggunaan Random Forest dalam aplikasi ini:
-        
-        1. **Akurasi Tinggi**: Mengkombinasikan multiple decision trees untuk hasil prediksi yang lebih akurat
-        2. **Penanganan Data Kompleks**: Mampu menangani berbagai jenis variabel (lokasi, tipe kamar, dll.)
-        3. **Ketahanan terhadap Outlier**: Tidak sensitif terhadap data ekstrem
-        4. **Interpretasi Mudah**: Memberikan tingkat kepentingan fitur yang mudah dipahami
-        """)
-
-        st.markdown("""
-        ### 📊 Dataset dan Sumber Data
-        
-        Dataset yang digunakan berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k). 
-        
-        **Mengapa memilih dataset ini?**
-        - Kualitas Data: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap
-        - Keragaman: Mencakup berbagai lokasi, tipe kamar, dan fasilitas
-        - Update Teratur: Dataset diperbarui secara berkala
-        - Relevansi: Mencerminkan kondisi pasar hotel yang sebenarnya
-        """)
-
-        st.markdown("""
         ### 🎯 Tujuan dan Manfaat
         
         **Tujuan Pengembangan:**
@@ -97,7 +74,7 @@ def beranda():
         2. Pengambilan Keputusan yang Lebih Informed
         3. Pemahaman Mendalam tentang Tren Harga Hotel
         """)
-
+        
         st.markdown("""
         ### 🚀 Cara Menggunakan Website
         
@@ -127,6 +104,22 @@ def beranda():
         4. Perhatikan tingkat akurasi prediksi
         """)
 
+# Fungsi untuk halaman metode
+def metode():
+    st.title("⚙️ Metode Prediksi")
+    st.markdown("---")
+    
+    st.markdown("""
+    ### 🤖 Teknologi Machine Learning yang Digunakan
+    
+    Aplikasi ini menggunakan algoritma **Random Forest Regressor**, sebuah model machine learning yang handal untuk prediksi harga hotel. Berikut adalah alasan utama pemilihan metode ini:
+    
+    1. **Akurasi Tinggi**: Random Forest menggunakan kombinasi dari banyak decision trees sehingga memberikan hasil yang lebih stabil dan akurat.
+    2. **Fleksibilitas**: Model ini dapat menangani berbagai jenis data baik kategorikal maupun numerik.
+    3. **Ketahanan terhadap Overfitting**: Random Forest cenderung lebih tahan terhadap overfitting dibandingkan dengan metode lainnya.
+    4. **Feature Importance**: Algoritma ini mampu memberikan wawasan tentang fitur mana yang paling memengaruhi prediksi harga hotel.
+    """)
+
 # Fungsi untuk halaman dataset
 def dataset_view():
     st.title("📊 Dataset Hotel")
@@ -143,6 +136,18 @@ def dataset_view():
         st.write("Harga Terendah:", f"Rp {dataset['Room Price'].min():,.2f}")
         st.write("Harga Tertinggi:", f"Rp {dataset['Room Price'].max():,.2f}")
         st.write("Harga Rata-rata:", f"Rp {dataset['Room Price'].mean():,.2f}")
+
+    st.markdown("---")
+    st.markdown("### 📚 Dataset dan Sumber Data")
+    st.markdown("""
+    Dataset yang digunakan berasal dari [Kaggle - Hotel Dataset (Rates, Reviews, and Amenities)](https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k). 
+    
+    **Mengapa memilih dataset ini?**
+    - Kualitas Data: Berisi lebih dari 5,000 entri hotel dengan informasi lengkap.
+    - Keragaman: Mencakup berbagai lokasi, tipe kamar, dan fasilitas.
+    - Update Teratur: Dataset diperbarui secara berkala.
+    - Relevansi: Mencerminkan kondisi pasar hotel yang sebenarnya.
+    """)
 
 # Fungsi untuk halaman visualisasi
 def visualisasi():
@@ -370,6 +375,8 @@ def set_background_image(image_url):
 # Router halaman
 if selected == "Beranda":
     beranda()
+elif selected == "Metode":
+    metode()
 elif selected == "Dataset":
     dataset_view()
 elif selected == "Visualisasi":
