@@ -42,6 +42,7 @@ st.sidebar.metric("Total Data", f"{len(dataset):,} baris")
 def beranda():
     st.title("🏢 Aplikasi Prediksi Harga Hotel")
     st.markdown("---")
+    st.image("image.jpg", caption="Hotel", width=800)
     
     col1, col2 = st.columns([2, 1])
     with col1:
