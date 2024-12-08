@@ -465,6 +465,8 @@ def set_background_image(image_url):
         unsafe_allow_html=True
     )
 
+set_background_image("https://wallpapercave.com/wp/wp4581495.jpg")
+
 # Router halaman
 if selected == "Beranda":
     beranda()

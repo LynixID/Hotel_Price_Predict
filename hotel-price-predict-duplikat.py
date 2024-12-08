@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="Prediksi Harga Hotel")
 # Fungsi untuk memuat dan membersihkan data
 def muat_data():
     data = pd.read_csv("booking_hotel.csv", encoding="latin1")
-    data.columns = data.columns.str.strip()
+    data.columns = data.columns.str.strip()A
     data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace(r"[^\d]", "", regex=True).astype(float)
     return data.dropna(subset=['Room Price'])
 

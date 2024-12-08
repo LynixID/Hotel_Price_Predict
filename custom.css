@@ -1,0 +1,15 @@
+/* Prevent the second column from being scrollable */
+.stApp [data-testid="column"]:nth-child(2) {
+    overflow-y: hidden;
+  }
+
+/* Move the sidebar navigation to the bottom */
+.stApp .stDecoration {
+  order: 2;
+  margin-top: 2rem;
+}
+
+/* Make the model cards clickable */
+.stApp .stCard {
+  cursor: pointer;
+}
