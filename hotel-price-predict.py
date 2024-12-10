@@ -562,7 +562,7 @@ def set_background_image(image_url):
         unsafe_allow_html=True
     )
 
-set_background_image("https://wallpapercave.com/wp/wp4581495.jpg")
+set_background_image("https://i.printerdoc.net/HP%20LaserJet%20Enterprise%20700%20color%20MFP%20M775%20series/id/HP%20LaserJet%20Enterprise%20700%20color%20MFP%20M775%20series_id161.png")
 
 # Router halaman
 if selected == "Beranda":
