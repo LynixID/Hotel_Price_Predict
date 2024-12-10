@@ -6,6 +6,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor 
 from sklearn.metrics import mean_absolute_error
+from PIL import Image, ImageOps, ImageDraw
 
 # Konfigurasi tampilan halaman
 st.set_page_config(layout="wide", page_title="Prediksi Harga Hotel")
@@ -28,7 +29,7 @@ st.sidebar.markdown("---")
 # Menu sidebar
 selected = st.sidebar.selectbox(
     "Pilih Menu",
-    ["Beranda", "Metode", "Dataset", "Visualisasi", "Prediksi"],
+    ["Beranda", "Metode", "Dataset", "Visualisasi", "Prediksi", "Tentang Kami"],
 )
 
 # Informasi di sidebar
@@ -449,6 +450,101 @@ def prediksi():
             - Range ini memberikan gambaran tentang fluktuasi harga yang mungkin terjadi
             """)
 
+def about_us():
+    st.title("Tentang Kami")
+
+    # Tentang Kami
+    st.markdown(
+        """
+        <div class="section justify-text" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px; margin-bottom:30px">
+        Aplikasi ini dikembangkan oleh Kelompok 7 sebagai bagian dari proyek mata kuliah Sistem Cerdas pada semester 3. Kami berkomitmen menghadirkan solusi inovatif dan terus mengembangkan aplikasi ini agar semakin bermanfaat bagi pengguna. Dengan memanfaatkan teknologi terkini, kami berharap aplikasi ini dapat memberikan pengalaman terbaik dan memenuhi kebutuhan pengguna secara efektif. Kami juga terbuka terhadap masukan dan saran untuk perbaikan di masa mendatang.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Daftar anggota tim dengan foto dan tautan media sosial
+    team_members = [
+        {
+            "name": "Dirajati Kusuma Wardani",
+            "image": "Dira.JPG",
+            "instagram": "https://instagram.com/2.dzxraxx5",
+            "whatsapp": "https://wa.me/6285706577250"
+        },
+        {
+            "name": "Ilham Gading Pangestu",
+            "image": "Gading.JPG",
+            "instagram": "https://instagram.com/ilham_stu",
+            "whatsapp": "https://wa.me/6283845586939"
+        },
+        {
+            "name": "Kress Satu Java Ikhsan Dwenda",
+            "image": "Kress.JPG",
+            "instagram": "https://instagram.com/mzjavakoestyantara",
+            "whatsapp": "https://wa.me/6285754395215"
+        },
+        {
+            "name": "Rivia Marsadah",
+            "image": "Rivia.JPG",
+            "instagram": "https://instagram.com/zibethinus_uf",
+            "whatsapp": "https://wa.me/6289608074844"
+        }
+    ]
+
+    # Menampilkan foto, nama, dan ikon media sosial dalam kolom
+    col1, col2, col3, col4 = st.columns(4)
+
+    for i, member in enumerate(team_members):
+        col = eval(f"col{i+1}")
+        with col:
+            image_path = f"images/{member['image']}"  # Asumsi gambar ada di folder 'images'
+            try:
+                img = Image.open(image_path)
+
+                img = img.rotate(-90, expand=True)
+                
+                # Membuat gambar menjadi bulat
+                img = ImageOps.fit(img, (300, 300), Image.Resampling.LANCZOS)
+                mask = Image.new('L', (300, 300), 0)
+                draw = ImageDraw.Draw(mask)
+                draw.ellipse((0, 0, 300, 300), fill=255)
+                img.putalpha(mask)
+
+                st.image(img, use_container_width=True, output_format="PNG")
+            except FileNotFoundError:
+                st.write(f"Gambar {member['image']} tidak ditemukan.")
+            
+            # Menampilkan nama anggota tim dan ikon media sosial
+            st.markdown(
+                f"""
+                <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">
+                    {member['name']}
+                </div>
+                <div style="text-align: center;">
+                    <a href="{member['instagram']}" target="_blank" style="margin-right: 10px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 24px; height: 24px;">
+                    </a>
+                    <a href="{member['whatsapp']}" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 24px; height: 24px;">
+                    </a>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+
+    st.markdown(
+        """
+        <div style="background-color: #eaf4f4; padding: 15px; border-radius: 10px; font-size: 16px; margin-top:30px">
+            <p>Berikut adalah tautan penting terkait proyek ini:</p>
+            <ul>
+                <li><a href="https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k" target="_blank">Link Dataset</a></li>
+                <li><a href="https://hotelprice.streamlit.app/" target="_blank">URL Hasil Project</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1bXTIo2-8dqmyyKeVmLaLZ6IiHRWGVHEi?usp=drive_link" target="_blank">Link GDrive Project</a></li>
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 def set_background_image(image_url):
     st.markdown(
@@ -479,3 +575,5 @@ elif selected == "Visualisasi":
     visualisasi()
 elif selected == "Prediksi":
     prediksi()
+elif selected == "Tentang Kami":
+    about_us()
