@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="Prediksi Harga Hotel")
 
 # Fungsi untuk memuat dan membersihkan data
 def muat_data():
-    data = pd.read_csv("/file pendukung/booking_hotel.csv", encoding="latin1")
+    data = pd.read_csv("file pendukung/booking_hotel.csv", encoding="latin1")
     data.columns = data.columns.str.strip()
     data['Room Price'] = data['Room Price (in BDT or any other currency)'].str.replace(r"[^\d]", "", regex=True).astype(float)
     return data.dropna(subset=['Room Price'])
@@ -22,7 +22,7 @@ def muat_data():
 dataset = muat_data()
 
 # Konfigurasi sidebar
-st.sidebar.image("/images/traveltime.png", width=300)
+st.sidebar.image("images/traveltime.png", width=300)
 st.sidebar.title("🏨 Menu Navigasi")
 st.sidebar.markdown("---")
 
@@ -43,7 +43,7 @@ st.sidebar.metric("Total Data", f"{len(dataset):,} baris")
 def beranda():
     st.title("🏢 Aplikasi Prediksi Harga Hotel")
     st.markdown("---")
-    st.image("/images/image.jpg", caption="Hotel", width=800)
+    st.image("images/image.jpg", caption="Hotel", width=800)
     
     col1, col2 = st.columns([2, 1])
     with col1:
@@ -56,7 +56,7 @@ def beranda():
         - 🛋️ **Tipe Tempat Tidur**
         """)
         
-        st.image("/images/hotel.jpg", caption="Newstar Hotel", use_container_width=True)
+        st.image("images/hotel.jpg", caption="Newstar Hotel", use_container_width=True)
         
         st.info(""" 
         ### 🎯 Fitur Utama
@@ -97,7 +97,7 @@ def beranda():
         """)
         
     with col2:
-        st.image("/images/giftutor.gif", caption="Tutorial", use_container_width=True)
+        st.image("images/giftutor.gif", caption="Tutorial", use_container_width=True)
         
         st.markdown(""" 
         ### 💡 Tips Penggunaan
