@@ -456,7 +456,7 @@ def about_us():
     # Tentang Kami
     st.markdown(
         """
-        <div class="section justify-text" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px; margin-bottom:30px">
+        <div class="section justify-text" style="background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px; margin-bottom:40px">
         Aplikasi ini dikembangkan oleh Kelompok 7 sebagai bagian dari proyek mata kuliah Sistem Cerdas pada semester 3. Kami berkomitmen menghadirkan solusi inovatif dan terus mengembangkan aplikasi ini agar semakin bermanfaat bagi pengguna. Dengan memanfaatkan teknologi terkini, kami berharap aplikasi ini dapat memberikan pengalaman terbaik dan memenuhi kebutuhan pengguna secara efektif. Kami juga terbuka terhadap masukan dan saran untuk perbaikan di masa mendatang.
         </div>
         """,
@@ -467,24 +467,28 @@ def about_us():
     team_members = [
         {
             "name": "Dirajati Kusuma Wardani",
+            "NIM / Absen": "233307098 / 08",
             "image": "Dira.JPG",
             "instagram": "https://instagram.com/2.dzxraxx5",
             "whatsapp": "https://wa.me/6285706577250"
         },
         {
             "name": "Ilham Gading Pangestu",
+            "NIM / Absen": "233307102 / 12",
             "image": "Gading.JPG",
             "instagram": "https://instagram.com/ilham_stu",
             "whatsapp": "https://wa.me/6283845586939"
         },
         {
             "name": "Kress Satu Java Ikhsan Dwenda",
+            "NIM / Absen": "233307105 / 15",
             "image": "Kress.JPG",
             "instagram": "https://instagram.com/mzjavakoestyantara",
             "whatsapp": "https://wa.me/6285754395215"
         },
         {
             "name": "Rivia Marsadah",
+            "NIM / Absen": "233307114 / 23",
             "image": "Rivia.JPG",
             "instagram": "https://instagram.com/zibethinus_uf",
             "whatsapp": "https://wa.me/6289608074844"
@@ -520,6 +524,9 @@ def about_us():
                 <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">
                     {member['name']}
                 </div>
+                 <div style="text-align: center; font-weight: bold; margin-bottom: 10px;">
+                    {member['NIM / Absen']}
+                </div>
                 <div style="text-align: center;">
                     <a href="{member['instagram']}" target="_blank" style="margin-right: 10px;">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 24px; height: 24px;">
@@ -534,7 +541,7 @@ def about_us():
 
     st.markdown(
         """
-        <div style="background-color: #eaf4f4; padding: 15px; border-radius: 10px; font-size: 16px; margin-top:30px">
+        <div style="background-color: #eaf4f4; padding: 15px; border-radius: 10px; font-size: 16px; margin-top:40px">
             <p>Berikut adalah tautan penting terkait proyek ini:</p>
             <ul>
                 <li><a href="https://www.kaggle.com/datasets/joyshil0599/hotel-dataset-rates-reviews-and-amenities5k" target="_blank">Link Dataset</a></li>
